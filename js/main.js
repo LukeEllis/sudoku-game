@@ -152,19 +152,63 @@ $('.square').each(function(i, obj) {
       $(obj).text(5);
     }
     else{
-      // $(obj).append("<form class='puzzle-piece'><input type='text' value=""></form>");
+      $(obj).append("<div class='puzzle-piece'><input type='text'></div>");
     }
 });
 
 /* ------------------------------
- III. Fill Level 2
+ III. Solve Level 1 Logic
+------------------------------*/
+
+// $('.square').each(function(i, obj) {
+//     if (i === 0 && obj.text === 4){
+//       alert("you win the game!");
+//     }
+// });
+
+let save_input_val
+$('.puzzle-piece input').on('keyup',function(event){
+  event.preventDefault();
+  if (event.key !== "Enter") {
+    save_input_val = $(this).val();
+  }
+
+  console.log(save_input_val, event.key === 'Enter', 'save_input_val');
+
+  if(parseInt(save_input_val) === 4 && event.key === "Enter") {
+    alert("you win the game!");
+    console.log(save_input_val);
+  }
+});
+
+$(document).on('keyup', function(event) {
+  console.log('output', event.key);
+  if (event.key === "Enter") {
+    console.log('test');
+  }
+})
+
+/* ------------------------------
+ . Fill Level 2
 ------------------------------*/
 /* ------------------------------
- IV. Fill Level 3
+ . Solve Level 2 Logic
 ------------------------------*/
 /* ------------------------------
- V. Fill Level 4
+ . Fill Level 3
 ------------------------------*/
 /* ------------------------------
- VI. Fill Level 5
+ . Solve Level 3 Logic
+------------------------------*/
+/* ------------------------------
+ . Fill Level 4
+------------------------------*/
+/* ------------------------------
+ . Solve Level 4 Logic
+------------------------------*/
+/* ------------------------------
+ . Fill Level 5
+------------------------------*/
+/* ------------------------------
+ . Solve Level 5 Logic
 ------------------------------*/
