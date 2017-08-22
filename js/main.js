@@ -6,30 +6,44 @@ console.log("JS connected");
 
 for (var i = 0; i < 81; i++){
   let square = $("<div class='square'></div>")
-  square.append('<h6></h6>')
+  square.append('<h2></h2>')
   $('.game-board').append(square)
 }
-// for (var i = 0; i < 9; i++){
-//   $('.game-board').append("<div class='box'></div>")
-// }
 
 /* ------------------------------
- II. Fill Level 1
+ II. Grid Buttons
 ------------------------------*/
 
-// var sudoku_data = [
-//   [4,2,0,7,1,0,0,0,3],
-//   [0,5,3,0,8,0,7,1,0],
-//   [0,0,6,3,5,0,2,4,0],
-//   [0,0,0,5,9,3,6,0,7],
-//   [5,9,2,0,0,7,0,8,0],
-//   [3,6,0,0,0,4,9,5,0],
-//   [6,8,1,0,0,0,4,0,2],
-//   [0,0,5,2,4,8,0,0,9],
-//   [2,0,0,6,0,1,0,3,5]
-// ];
+for (var j=1; j < 10; j++){
+  let gridButton = $("<input type='button' value=''>")
+  gridButton.attr('value', j)
+  $('#gridButtonsBar').append(gridButton)
+  gridButton.on('click', function(){
+    alert("This button is still a work in progress. Try again some other time!");
+  })
+}
 
-$('.square h6').each(function(i, obj) {
+/* ------------------------------
+ III. Restart Level Button
+------------------------------*/
+
+$('#levelRestart').on('click', function(){
+  alert("This button is still a work in progress. Try again some other time!");
+});
+
+/* ------------------------------
+ IV. Hint Button
+------------------------------*/
+
+$('#hint').on('click', function(){
+  alert("This button is still a work in progress. Try again some other time!");
+});
+
+/* ------------------------------
+ V. Fill Level 1
+------------------------------*/
+
+$('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
     }
@@ -171,7 +185,7 @@ $('.square h6').each(function(i, obj) {
 });
 
 /* ------------------------------
- III. Solve Level 1 Logic
+ VI. Solve Level 1 Logic
 ------------------------------*/
 
 $('#progress').on('click', function(){
@@ -255,3 +269,10 @@ $('#progress').on('click', function(){
 /* ------------------------------
  . Solve Level 5 Logic
 ------------------------------*/
+/* ------------------------------
+ . Things to add
+------------------------------*/
+/* ----------------------------------------------------------------------
+ 1) Prevent non-numeric inputs
+ 2) Give hint (fill in square) based on which user input box is active
+---------------------------------------------------------------------*/
