@@ -1,5 +1,5 @@
 console.log("JS connected");
-// const object = $(obj);
+
 /* ------------------------------
  I. Create the Game Board
 ------------------------------*/
@@ -45,11 +45,23 @@ $('#levelRestart').on('click', function(){
 
 $('#hint').on('click', function(){
   alert("This button is still a work in progress. Try again some other time!");
+  // $('.puzzle-piece').on('focus', function(){
+  //   $('.puzzle-piece:nth-child(1)').val('5')
+  // });
 });
 
 /* ------------------------------
- VI. Fill Level 1
+ VI. Level Buttons
 ------------------------------*/
+
+$('.levelButton').on('click', function(){
+  alert("This button is still a work in progress. Try again some other time!");
+});
+
+/* ------------------------------
+ VII. Fill Level 1
+------------------------------*/
+
 $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
@@ -192,7 +204,7 @@ $('.square h2').each(function(i, obj) {
 });
 
 /* ------------------------------
- VII. Solve Level 1 Logic
+ VIII. Solve Level 1 Logic
 ------------------------------*/
 
 $('#progress').on('click', function(){
