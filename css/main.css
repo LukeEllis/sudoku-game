@@ -8,7 +8,7 @@
 .game-board {
   width: 27em;
   height: 27em;
-  margin: auto;
+  margin: 1.5em auto 0 auto;
 }
 
 .square {
@@ -28,9 +28,14 @@
   border: .5px rgba(0, 0, 0, .5) solid;
 }
 
-.puzzle-piece input {
-  width: 3em;
+.puzzle-piece {
+  width: 60%;
   text-align: center;
+}
+
+#progress {
+  display: block;
+  margin: 1.5em auto 0 auto;
 }
 
 h1 {

@@ -5,17 +5,31 @@ console.log("JS connected");
 ------------------------------*/
 
 for (var i = 0; i < 81; i++){
-  $('.game-board').append("<div class='square'></div>")
+  let square = $("<div class='square'></div>")
+  square.append('<h6></h6>')
+  $('.game-board').append(square)
 }
-for (var i = 0; i < 9; i++){
-  $('.game-board').append("<div class='box'></div>")
-}
+// for (var i = 0; i < 9; i++){
+//   $('.game-board').append("<div class='box'></div>")
+// }
 
 /* ------------------------------
  II. Fill Level 1
 ------------------------------*/
 
-$('.square').each(function(i, obj) {
+// var sudoku_data = [
+//   [4,2,0,7,1,0,0,0,3],
+//   [0,5,3,0,8,0,7,1,0],
+//   [0,0,6,3,5,0,2,4,0],
+//   [0,0,0,5,9,3,6,0,7],
+//   [5,9,2,0,0,7,0,8,0],
+//   [3,6,0,0,0,4,9,5,0],
+//   [6,8,1,0,0,0,4,0,2],
+//   [0,0,5,2,4,8,0,0,9],
+//   [2,0,0,6,0,1,0,3,5]
+// ];
+
+$('.square h6').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
     }
@@ -152,7 +166,7 @@ $('.square').each(function(i, obj) {
       $(obj).text(5);
     }
     else{
-      $(obj).append("<div class='puzzle-piece'><input type='text'></div>");
+      $(obj).append("<input class='puzzle-piece' type='text'>");
     }
 });
 
@@ -160,33 +174,23 @@ $('.square').each(function(i, obj) {
  III. Solve Level 1 Logic
 ------------------------------*/
 
-// $('.square').each(function(i, obj) {
-//     if (i === 0 && obj.text === 4){
-//       alert("you win the game!");
-//     }
+// $('#progress').on('click', function(){
+//   let inputs = $("input");
+//   console.log(inputs);
 // });
 
-let save_input_val
-$('.puzzle-piece input').on('keyup',function(event){
-  event.preventDefault();
-  if (event.key !== "Enter") {
-    save_input_val = $(this).val();
-  }
-
-  console.log(save_input_val, event.key === 'Enter', 'save_input_val');
-
-  if(parseInt(save_input_val) === 4 && event.key === "Enter") {
-    alert("you win the game!");
-    console.log(save_input_val);
-  }
+$('#progress').on('click', function(){
+  let inputs = $("input");
+  console.log(inputs);
 });
 
-$(document).on('keyup', function(event) {
-  console.log('output', event.key);
-  if (event.key === "Enter") {
-    console.log('test');
-  }
-})
+/*
+1. Create input array of the value data from jQuery array data
+2. Create solution array for Level 1
+3. Check if value data ==== solution array
+4. If above is true, player wins the level
+*/
+
 
 /* ------------------------------
  . Fill Level 2
