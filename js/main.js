@@ -17,17 +17,17 @@ for (var i = 0; i < 81; i++){
  II. Fill Level 1
 ------------------------------*/
 
-// var sudoku_data = [
-//   [4,2,0,7,1,0,0,0,3],
-//   [0,5,3,0,8,0,7,1,0],
-//   [0,0,6,3,5,0,2,4,0],
-//   [0,0,0,5,9,3,6,0,7],
-//   [5,9,2,0,0,7,0,8,0],
-//   [3,6,0,0,0,4,9,5,0],
-//   [6,8,1,0,0,0,4,0,2],
-//   [0,0,5,2,4,8,0,0,9],
-//   [2,0,0,6,0,1,0,3,5]
-// ];
+var sudoku_data = [
+  [4,2,0,7,1,0,0,0,3],
+  [0,5,3,0,8,0,7,1,0],
+  [0,0,6,3,5,0,2,4,0],
+  [0,0,0,5,9,3,6,0,7],
+  [5,9,2,0,0,7,0,8,0],
+  [3,6,0,0,0,4,9,5,0],
+  [6,8,1,0,0,0,4,0,2],
+  [0,0,5,2,4,8,0,0,9],
+  [2,0,0,6,0,1,0,3,5]
+];
 
 $('.square h6').each(function(i, obj) {
     if (i === 0){
@@ -181,16 +181,58 @@ $('.square h6').each(function(i, obj) {
 
 $('#progress').on('click', function(){
   let inputs = $("input");
-  console.log(inputs);
+  let levelOneSolution = [
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+  ];
+  console.log(inputs.eq(0).val());
+  if (inputs.eq(0).val() == 0 &&
+      inputs.eq(1).val() == 0 &&
+      inputs.eq(2).val() == 0 &&
+      inputs.eq(3).val() == 0 &&
+      inputs.eq(4).val() == 0 &&
+      inputs.eq(5).val() == 0 &&
+      inputs.eq(6).val() == 0 &&
+      inputs.eq(7).val() == 0 &&
+      inputs.eq(8).val() == 0 &&
+      inputs.eq(9).val() == 0 &&
+      inputs.eq(10).val() == 0 &&
+      inputs.eq(11).val() == 0 &&
+      inputs.eq(12).val() == 0 &&
+      inputs.eq(13).val() == 0 &&
+      inputs.eq(14).val() == 0 &&
+      inputs.eq(15).val() == 0 &&
+      inputs.eq(16).val() == 0 &&
+      inputs.eq(17).val() == 0 &&
+      inputs.eq(18).val() == 0 &&
+      inputs.eq(19).val() == 0 &&
+      inputs.eq(20).val() == 0 &&
+      inputs.eq(21).val() == 0 &&
+      inputs.eq(22).val() == 0 &&
+      inputs.eq(23).val() == 0 &&
+      inputs.eq(24).val() == 0 &&
+      inputs.eq(25).val() == 0 &&
+      inputs.eq(26).val() == 0 &&
+      inputs.eq(27).val() == 0 &&
+      inputs.eq(28).val() == 0 &&
+      inputs.eq(29).val() == 0 &&
+      inputs.eq(30).val() == 0 &&
+      inputs.eq(31).val() == 0 &&
+      inputs.eq(32).val() == 0 &&
+      inputs.eq(33).val() == 0 &&
+      inputs.eq(34).val() == 0 &&
+      inputs.eq(35).val() == 0
+  ){
+    alert("Congratulations, you've beaten Level 1!!!");
+  }
+  else {
+    alert("Keep trying!");
+  }
 });
-
-/*
-1. Create input array of the value data from jQuery array data
-2. Create solution array for Level 1
-3. Check if value data ==== solution array
-4. If above is true, player wins the level
-*/
-
 
 /* ------------------------------
  . Fill Level 2
