@@ -1,4 +1,6 @@
 console.log("JS connected");
+/* data-id: grabs data from specific id
+*/
 
 /* ------------------------------
  I. Create the Game Board
@@ -55,7 +57,7 @@ $('#hint').on('click', function(){
 ------------------------------*/
 
 $('.levelButton').on('click', function(){
-  alert("This button is still a work in progress. Try again some other time!");
+  alert("This button is still a work in progress. Try again some other time!")
 });
 
 /* ------------------------------
@@ -258,6 +260,9 @@ $('#progress').on('click', function(){
       inputs.eq(35).val() == 8
   ){
     alert("Congratulations, you've beaten Level 1!!!");
+    // Makes Level 1 button unclickable for future Sudoku Champion check
+    var disabled = $('#levelButton1').attr("disabled", true);
+    disabled;
   }
   else {
     alert("Keep trying!");
