@@ -17,17 +17,17 @@ for (var i = 0; i < 81; i++){
  II. Fill Level 1
 ------------------------------*/
 
-var sudoku_data = [
-  [4,2,0,7,1,0,0,0,3],
-  [0,5,3,0,8,0,7,1,0],
-  [0,0,6,3,5,0,2,4,0],
-  [0,0,0,5,9,3,6,0,7],
-  [5,9,2,0,0,7,0,8,0],
-  [3,6,0,0,0,4,9,5,0],
-  [6,8,1,0,0,0,4,0,2],
-  [0,0,5,2,4,8,0,0,9],
-  [2,0,0,6,0,1,0,3,5]
-];
+// var sudoku_data = [
+//   [4,2,0,7,1,0,0,0,3],
+//   [0,5,3,0,8,0,7,1,0],
+//   [0,0,6,3,5,0,2,4,0],
+//   [0,0,0,5,9,3,6,0,7],
+//   [5,9,2,0,0,7,0,8,0],
+//   [3,6,0,0,0,4,9,5,0],
+//   [6,8,1,0,0,0,4,0,2],
+//   [0,0,5,2,4,8,0,0,9],
+//   [2,0,0,6,0,1,0,3,5]
+// ];
 
 $('.square h6').each(function(i, obj) {
     if (i === 0){
@@ -174,58 +174,55 @@ $('.square h6').each(function(i, obj) {
  III. Solve Level 1 Logic
 ------------------------------*/
 
-// $('#progress').on('click', function(){
-//   let inputs = $("input");
-//   console.log(inputs);
-// });
-
 $('#progress').on('click', function(){
   let inputs = $("input");
   let levelOneSolution = [
-    0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0,
+    8, 6, 5, 9,
+    9, 4, 2, 6,
+    1, 7, 9, 8,
+    8, 1, 4, 2,
+    1, 6, 3, 4,
+    7, 8, 2, 1,
+    9, 3, 5, 7,
+    7, 3, 1, 6,
+    4, 9, 7, 8,
   ];
-  console.log(inputs.eq(0).val());
-  if (inputs.eq(0).val() == 0 &&
-      inputs.eq(1).val() == 0 &&
-      inputs.eq(2).val() == 0 &&
-      inputs.eq(3).val() == 0 &&
-      inputs.eq(4).val() == 0 &&
-      inputs.eq(5).val() == 0 &&
-      inputs.eq(6).val() == 0 &&
-      inputs.eq(7).val() == 0 &&
-      inputs.eq(8).val() == 0 &&
-      inputs.eq(9).val() == 0 &&
-      inputs.eq(10).val() == 0 &&
-      inputs.eq(11).val() == 0 &&
-      inputs.eq(12).val() == 0 &&
-      inputs.eq(13).val() == 0 &&
-      inputs.eq(14).val() == 0 &&
-      inputs.eq(15).val() == 0 &&
-      inputs.eq(16).val() == 0 &&
-      inputs.eq(17).val() == 0 &&
-      inputs.eq(18).val() == 0 &&
-      inputs.eq(19).val() == 0 &&
-      inputs.eq(20).val() == 0 &&
-      inputs.eq(21).val() == 0 &&
-      inputs.eq(22).val() == 0 &&
-      inputs.eq(23).val() == 0 &&
-      inputs.eq(24).val() == 0 &&
-      inputs.eq(25).val() == 0 &&
-      inputs.eq(26).val() == 0 &&
-      inputs.eq(27).val() == 0 &&
-      inputs.eq(28).val() == 0 &&
-      inputs.eq(29).val() == 0 &&
-      inputs.eq(30).val() == 0 &&
-      inputs.eq(31).val() == 0 &&
-      inputs.eq(32).val() == 0 &&
-      inputs.eq(33).val() == 0 &&
-      inputs.eq(34).val() == 0 &&
-      inputs.eq(35).val() == 0
+  if (inputs.eq(0).val() == 8 &&
+      inputs.eq(1).val() == 6 &&
+      inputs.eq(2).val() == 5 &&
+      inputs.eq(3).val() == 9 &&
+      inputs.eq(4).val() == 9 &&
+      inputs.eq(5).val() == 4 &&
+      inputs.eq(6).val() == 2 &&
+      inputs.eq(7).val() == 6 &&
+      inputs.eq(8).val() == 1 &&
+      inputs.eq(9).val() == 7 &&
+      inputs.eq(10).val() == 9 &&
+      inputs.eq(11).val() == 8 &&
+      inputs.eq(12).val() == 8 &&
+      inputs.eq(13).val() == 1 &&
+      inputs.eq(14).val() == 4 &&
+      inputs.eq(15).val() == 2 &&
+      inputs.eq(16).val() == 1 &&
+      inputs.eq(17).val() == 6 &&
+      inputs.eq(18).val() == 3 &&
+      inputs.eq(19).val() == 4 &&
+      inputs.eq(20).val() == 7 &&
+      inputs.eq(21).val() == 8 &&
+      inputs.eq(22).val() == 2 &&
+      inputs.eq(23).val() == 1 &&
+      inputs.eq(24).val() == 9 &&
+      inputs.eq(25).val() == 3 &&
+      inputs.eq(26).val() == 5 &&
+      inputs.eq(27).val() == 7 &&
+      inputs.eq(28).val() == 7 &&
+      inputs.eq(29).val() == 3 &&
+      inputs.eq(30).val() == 1 &&
+      inputs.eq(31).val() == 6 &&
+      inputs.eq(32).val() == 4 &&
+      inputs.eq(33).val() == 9 &&
+      inputs.eq(34).val() == 7 &&
+      inputs.eq(35).val() == 8
   ){
     alert("Congratulations, you've beaten Level 1!!!");
   }
