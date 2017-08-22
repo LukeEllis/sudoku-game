@@ -6,8 +6,8 @@
 }
 
 .game-board {
-  width: 27em;
-  height: 27em;
+  width: 27.3em;
+  height: 27.28em;
   margin: 1.5em auto 0 auto;
 }
 
@@ -23,9 +23,14 @@
 }
 
 .box {
-  width: 0em;
-  height: 0em;
-  border: .5px rgba(0, 0, 0, .5) solid;
+  float: left;
+  display: inline-block;
+  width: 9em;
+  height: 9em;
+  background: white;
+  border: 2px black solid;
+  margin: 0;
+  align-items: center;
 }
 
 .puzzle-piece {
@@ -55,4 +60,45 @@ p {
   margin: .75em auto;
   width: 27em;
   clear: both;
+}
+
+.square:nth-child(1), .square:nth-child(2), .square:nth-child(3),
+.square:nth-child(4), .square:nth-child(5), .square:nth-child(6),
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9),
+.square:nth-child(28), .square:nth-child(29), .square:nth-child(30),
+.square:nth-child(31), .square:nth-child(32), .square:nth-child(33),
+.square:nth-child(34), .square:nth-child(35), .square:nth-child(36),
+.square:nth-child(55), .square:nth-child(56), .square:nth-child(57),
+.square:nth-child(58), .square:nth-child(59), .square:nth-child(60),
+.square:nth-child(61), .square:nth-child(62), .square:nth-child(63)
+{
+  border-top: 3px black solid;
+}
+
+.square:nth-child(73), .square:nth-child(74), .square:nth-child(75),
+.square:nth-child(76), .square:nth-child(77), .square:nth-child(78),
+.square:nth-child(79), .square:nth-child(80), .square:nth-child(81)
+{
+  border-bottom: 3px black solid;
+}
+
+
+.square:nth-child(9), .square:nth-child(18), .square:nth-child(27),
+.square:nth-child(36), .square:nth-child(45), .square:nth-child(54),
+.square:nth-child(63), .square:nth-child(72), .square:nth-child(81),
+.square:nth-child(3), .square:nth-child(12), .square:nth-child(21),
+.square:nth-child(6), .square:nth-child(15), .square:nth-child(24),
+.square:nth-child(30), .square:nth-child(39), .square:nth-child(48),
+.square:nth-child(33), .square:nth-child(42), .square:nth-child(51),
+.square:nth-child(57), .square:nth-child(66), .square:nth-child(75),
+.square:nth-child(60), .square:nth-child(69), .square:nth-child(78)
+{
+  border-right: 3px black solid;
+}
+
+.square:nth-child(1), .square:nth-child(10), .square:nth-child(19),
+.square:nth-child(28), .square:nth-child(37), .square:nth-child(46),
+.square:nth-child(55), .square:nth-child(64), .square:nth-child(73)
+{
+  border-left: 3px black solid;
 }
