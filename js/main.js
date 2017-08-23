@@ -98,8 +98,10 @@ $('#hint').on('click', function(){
 // }
 
 /* ------------------------------
- VIII. Fill Level 1
+ VIII. Level 1
 ------------------------------*/
+/* VIII a. Fill Level 1 */
+
 $('#levelButton1').on('click', function(){
 
   var level1 = $('.square h2').each(function(i, obj) {
@@ -242,102 +244,97 @@ $('#levelButton1').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
+/* VIII b. Level 1 Solution Logic */
+  $('#progress').on('click', function(){
+    let inputs = $("input");
+    let levelOneSolution = [
+      8, 6, 5, 9,
+      9, 4, 2, 6,
+      1, 7, 9, 8,
+      8, 1, 4, 2,
+      1, 6, 3, 4,
+      7, 8, 2, 1,
+      9, 3, 5, 7,
+      7, 3, 1, 6,
+      4, 9, 7, 8,
+    ];
+    if (inputs.eq(0).val() == 8 &&
+        inputs.eq(1).val() == 6 &&
+        inputs.eq(2).val() == 5 &&
+        inputs.eq(3).val() == 9 &&
+        inputs.eq(4).val() == 9 &&
+        inputs.eq(5).val() == 4 &&
+        inputs.eq(6).val() == 2 &&
+        inputs.eq(7).val() == 6 &&
+        inputs.eq(8).val() == 1 &&
+        inputs.eq(9).val() == 7 &&
+        inputs.eq(10).val() == 9 &&
+        inputs.eq(11).val() == 8 &&
+        inputs.eq(12).val() == 8 &&
+        inputs.eq(13).val() == 1 &&
+        inputs.eq(14).val() == 4 &&
+        inputs.eq(15).val() == 2 &&
+        inputs.eq(16).val() == 1 &&
+        inputs.eq(17).val() == 6 &&
+        inputs.eq(18).val() == 3 &&
+        inputs.eq(19).val() == 4 &&
+        inputs.eq(20).val() == 7 &&
+        inputs.eq(21).val() == 8 &&
+        inputs.eq(22).val() == 2 &&
+        inputs.eq(23).val() == 1 &&
+        inputs.eq(24).val() == 9 &&
+        inputs.eq(25).val() == 3 &&
+        inputs.eq(26).val() == 5 &&
+        inputs.eq(27).val() == 7 &&
+        inputs.eq(28).val() == 7 &&
+        inputs.eq(29).val() == 3 &&
+        inputs.eq(30).val() == 1 &&
+        inputs.eq(31).val() == 6 &&
+        inputs.eq(32).val() == 4 &&
+        inputs.eq(33).val() == 9 &&
+        inputs.eq(34).val() == 7 &&
+        inputs.eq(35).val() == 8
+    ){
+      alert("Congratulations, you've beaten Level 1!!!");
+      // Makes Level 1 button unclickable for future Sudoku Champion check
+      var disabled = $('#levelButton1').attr("disabled", true);
+      disabled;
+      // Clears Game Board
+      var hidelevel = $('.square h2').hide();
+      hidelevel;
+    }
+    else {
+      alert("Keep trying!");
+    }
+  });
 });
+/* ------------------------------
+ IX. Level 2
+------------------------------*/
+/* IX a. Fill Level 2 */
+/* IX b. Level 2 Solution Logic */
+/* ------------------------------
+ X. Level 3
+------------------------------*/
+/* X a. Fill Level 3 */
+/* X b. Level 3 Solution Logic */
+/* ------------------------------
+ XI. Level 4
+------------------------------*/
+/* XI a. Fill Level 4 */
+/* XI b. Level 4 Solution Logic */
+/* ------------------------------
+ XII. Level 5
+------------------------------*/
+/* XII a. Fill Level 5 */
+/* XII b. Level 5 Solution Logic */
 
-/* ------------------------------
- IX. Solve Level 1 Logic
-------------------------------*/
 
-$('#progress').on('click', function(){
-  let inputs = $("input");
-  let levelOneSolution = [
-    8, 6, 5, 9,
-    9, 4, 2, 6,
-    1, 7, 9, 8,
-    8, 1, 4, 2,
-    1, 6, 3, 4,
-    7, 8, 2, 1,
-    9, 3, 5, 7,
-    7, 3, 1, 6,
-    4, 9, 7, 8,
-  ];
-  if (inputs.eq(0).val() == 8 &&
-      inputs.eq(1).val() == 6 &&
-      inputs.eq(2).val() == 5 &&
-      inputs.eq(3).val() == 9 &&
-      inputs.eq(4).val() == 9 &&
-      inputs.eq(5).val() == 4 &&
-      inputs.eq(6).val() == 2 &&
-      inputs.eq(7).val() == 6 &&
-      inputs.eq(8).val() == 1 &&
-      inputs.eq(9).val() == 7 &&
-      inputs.eq(10).val() == 9 &&
-      inputs.eq(11).val() == 8 &&
-      inputs.eq(12).val() == 8 &&
-      inputs.eq(13).val() == 1 &&
-      inputs.eq(14).val() == 4 &&
-      inputs.eq(15).val() == 2 &&
-      inputs.eq(16).val() == 1 &&
-      inputs.eq(17).val() == 6 &&
-      inputs.eq(18).val() == 3 &&
-      inputs.eq(19).val() == 4 &&
-      inputs.eq(20).val() == 7 &&
-      inputs.eq(21).val() == 8 &&
-      inputs.eq(22).val() == 2 &&
-      inputs.eq(23).val() == 1 &&
-      inputs.eq(24).val() == 9 &&
-      inputs.eq(25).val() == 3 &&
-      inputs.eq(26).val() == 5 &&
-      inputs.eq(27).val() == 7 &&
-      inputs.eq(28).val() == 7 &&
-      inputs.eq(29).val() == 3 &&
-      inputs.eq(30).val() == 1 &&
-      inputs.eq(31).val() == 6 &&
-      inputs.eq(32).val() == 4 &&
-      inputs.eq(33).val() == 9 &&
-      inputs.eq(34).val() == 7 &&
-      inputs.eq(35).val() == 8
-  ){
-    alert("Congratulations, you've beaten Level 1!!!");
-    // Makes Level 1 button unclickable for future Sudoku Champion check
-    var disabled = $('#levelButton1').attr("disabled", true);
-    disabled;
 
-    //hide content of squares
-  }
-  else {
-    alert("Keep trying!");
-  }
-});
 
-/* ------------------------------
- . Fill Level 2
-------------------------------*/
-/* ------------------------------
- . Solve Level 2 Logic
-------------------------------*/
-/* ------------------------------
- . Fill Level 3
-------------------------------*/
-/* ------------------------------
- . Solve Level 3 Logic
-------------------------------*/
-/* ------------------------------
- . Fill Level 4
-------------------------------*/
-/* ------------------------------
- . Solve Level 4 Logic
-------------------------------*/
-/* ------------------------------
- . Fill Level 5
-------------------------------*/
-/* ------------------------------
- . Solve Level 5 Logic
-------------------------------*/
 /* ------------------------------
  . Things to add
 ------------------------------*/
 /* ----------------------------------------------------------------------
  1) Prevent non-numeric inputs
- 2) Give hint (fill in square) based on which user input box is active
 ---------------------------------------------------------------------*/
