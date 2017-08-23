@@ -56,15 +56,53 @@ $('#hint').on('click', function(){
  VI. Level Buttons
 ------------------------------*/
 
-$('.levelButton').on('click', function(){
-  alert("This button is still a work in progress. Try again some other time!")
-});
+// $('.levelButton').on('click', function(){
+//   alert("This button is still a work in progress. Try again some other time!")
+// });
+
+// On click, level button clears the board and sets it to the appropriate level
+
+// $('#levelButton1').on('click', function(){
+//   $('.game-board').remove(square)
+//   level1;
+// });
+//
+// $('#levelButton2').on('click', function(){
+//   $('.game-board').remove(square)
+//   level2;
+// });
+//
+// $('#levelButton3').on('click', function(){
+//   $('.game-board').remove(square)
+//   level3;
+// });
+//
+// $('#levelButton4').on('click', function(){
+//   $('.game-board').remove(square)
+//   level4;
+// });
+//
+// $('#levelButton5').on('click', function(){
+//   $('.game-board').remove(square)
+//   level5;
+// });
 
 /* ------------------------------
- VII. Fill Level 1
+ VII. Sudoku Champion Alert
 ------------------------------*/
+// Currently Disables Level Buttons and automatically awards the player Sudoku Champion
 
-$('.square h2').each(function(i, obj) {
+// while ($('.levelButton').attr("disabled", true)){
+//       alert("Congratulations, you are officially the Sudoku Champion!!!")
+//       break;
+// }
+
+/* ------------------------------
+ VIII. Fill Level 1
+------------------------------*/
+$('#levelButton1').on('click', function(){
+
+  var level1 = $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
     }
@@ -203,10 +241,11 @@ $('.square h2').each(function(i, obj) {
     else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
+  });
 });
 
 /* ------------------------------
- VIII. Solve Level 1 Logic
+ IX. Solve Level 1 Logic
 ------------------------------*/
 
 $('#progress').on('click', function(){
@@ -263,6 +302,8 @@ $('#progress').on('click', function(){
     // Makes Level 1 button unclickable for future Sudoku Champion check
     var disabled = $('#levelButton1').attr("disabled", true);
     disabled;
+
+    //hide content of squares
   }
   else {
     alert("Keep trying!");
