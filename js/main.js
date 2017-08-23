@@ -1,8 +1,41 @@
-console.log("JS connected");
-/* data-id: grabs data from specific id */
-
 /* ------------------------------
  0. Table of Contents
+ I. Create the Game Board
+ II. Grid Buttons (Incomplete)
+ III. Check for Errors Button (Legacy/Review)
+ IV. Restart Level Button
+ V. Hint Button (Legacy/Review)
+ VI. Sudoku Champion Alert
+ VII. Level 1
+ VII. a. Fill Level 1
+ VII. b. Level 1 Solution Logic
+ VII. c. Level 1 Errors Button (Incomplete)
+ VII. d. Level 1 Hint Button (Incomplete)
+ VII. e. Level 1 Answers Button
+ VIII. Level 2
+ VIII. a. Fill Level 2
+ VIII. b. Level 2 Solution Logic
+ VIII. c. Level 2 Errors Button (Incomplete)
+ VIII. d. Level 2 Hint Button (Incomplete)
+ VIII. e. Level 2 Answers Button
+ IX. Level 3
+ IX. a. Fill Level 3
+ IX. b. Level 3 Solution Logic
+ IX. c. Level 3 Errors Button (Incomplete)
+ IX. d. Level 3 Hint Button (Incomplete)
+ IX. e. Level 3 Answers Button
+ X. Level 4
+ X. a. Fill Level 4
+ X. b. Level 4 Solution Logic
+ X. c. Level 4 Errors Button (Incomplete)
+ X. d. Level 4 Hint Button (Incomplete)
+ X. e. Level 4 Answers Button
+ XI. Level 5
+ XI. a. Fill Level 5
+ XI. b. Level 5 Solution Logic
+ XI. c. Level 5 Errors Button (Incomplete)
+ XI. d. Level 5 Hint Button (Incomplete)
+ XI. e. Level 5 Answers Button
 ------------------------------*/
 
 /* ------------------------------
@@ -60,14 +93,6 @@ $('#levelRestart').on('click', function(){
 //   // $('.puzzle-piece').on('focus', function(){
 //   //   $('.puzzle-piece:nth-child(1)').val('5')
 //   // });
-// });
-
-/* ------------------------------
- VI. Answers Button
-------------------------------*/
-
-// $('#answers').on('click', function(){
-//   alert("This button is still a work in progress. Try again some other time!");
 // });
 
 /* ------------------------------
