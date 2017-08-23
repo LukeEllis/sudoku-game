@@ -697,7 +697,6 @@ $('#levelButton3').on('click', function(){
       // Clears Game Board
       // var hidelevel = $('.square h2').hide();
       // hidelevel;
-      createBoard();
     }
     else {
       alert("Keep trying!");
@@ -908,8 +907,8 @@ $('#levelButton4').on('click', function(){
       var disabled = $('#levelButton4').attr("disabled", true);
       disabled;
       // Clears Game Board
-      var hidelevel = $('.square h2').hide();
-      hidelevel;
+      // var hidelevel = $('.square h2').hide();
+      // hidelevel;
     }
     else {
       alert("Keep trying!");
@@ -1119,8 +1118,8 @@ $('#levelButton5').on('click', function(){
       var disabled = $('#levelButton5').attr("disabled", true);
       disabled;
       // Clears Game Board
-      var hidelevel = $('.square h2').hide();
-      hidelevel;
+      // var hidelevel = $('.square h2').hide();
+      // hidelevel;
     }
     else {
       alert("Keep trying!");
