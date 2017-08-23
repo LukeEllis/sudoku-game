@@ -14,7 +14,7 @@ var createBoard = function (){
   $('#progress').off('click');
   // $('#errors').off('click');
   // $('#hint').off('click');
-  // $('#answers').off('click');
+  $('#answers').off('click');
   for (var i = 0; i < 81; i++){
     let square = $("<div class='square'></div>")
     square.append('<h2></h2>')
@@ -306,9 +306,46 @@ $('#levelButton1').on('click', function(){
   // });
 /* VIII e. Level 1 Answers Button */
 
-  // $('#answers').on('click', function(){
-  //   //fill in all text input boxes with correct answers
-  // });
+  $('#answers').on('click', function(){
+    //fill in all text input boxes with correct answers
+    let inputs = $("input");
+    inputs.eq(0).val('8') &&
+    inputs.eq(1).val('6') &&
+    inputs.eq(2).val('5') &&
+    inputs.eq(3).val('9') &&
+    inputs.eq(4).val('9') &&
+    inputs.eq(5).val('4') &&
+    inputs.eq(6).val('2') &&
+    inputs.eq(7).val('6') &&
+    inputs.eq(8).val('1') &&
+    inputs.eq(9).val('7') &&
+    inputs.eq(10).val('9') &&
+    inputs.eq(11).val('8') &&
+    inputs.eq(12).val('8') &&
+    inputs.eq(13).val('1') &&
+    inputs.eq(14).val('4') &&
+    inputs.eq(15).val('2') &&
+    inputs.eq(16).val('1') &&
+    inputs.eq(17).val('6') &&
+    inputs.eq(18).val('3') &&
+    inputs.eq(19).val('4') &&
+    inputs.eq(20).val('7') &&
+    inputs.eq(21).val('8') &&
+    inputs.eq(22).val('2') &&
+    inputs.eq(23).val('1') &&
+    inputs.eq(24).val('9') &&
+    inputs.eq(25).val('3') &&
+    inputs.eq(26).val('5') &&
+    inputs.eq(27).val('7') &&
+    inputs.eq(28).val('7') &&
+    inputs.eq(29).val('3') &&
+    inputs.eq(30).val('1') &&
+    inputs.eq(31).val('6') &&
+    inputs.eq(32).val('4') &&
+    inputs.eq(33).val('9') &&
+    inputs.eq(34).val('7') &&
+    inputs.eq(35).val('8')
+  });
 
 });
 
