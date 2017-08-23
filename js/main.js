@@ -1,13 +1,16 @@
 console.log("JS connected");
-/* data-id: grabs data from specific id
-*/
+/* data-id: grabs data from specific id */
 
 /* ------------------------------
  I. Create the Game Board
 ------------------------------*/
+
 var createBoard = function (){
   $('.game-board').empty();
   $('#progress').off('click');
+  // $('#errors').off('click');
+  // $('#hint').off('click');
+  // $('#answers').off('click');
   for (var i = 0; i < 81; i++){
     let square = $("<div class='square'></div>")
     square.append('<h2></h2>')
@@ -56,39 +59,15 @@ $('#hint').on('click', function(){
 });
 
 /* ------------------------------
- VI. Level Buttons
+ VI. Answers Button
 ------------------------------*/
 
-// $('.levelButton').on('click', function(){
-//   alert("This button is still a work in progress. Try again some other time!")
-// });
-
-// On click, level button clears the board and sets it to the appropriate level
-
-// $('#levelButton1').on('click', function(){
-//   $('.game-board').remove(square)
-//   level1;
-// });
-//
-// $('#levelButton2').on('click', function(){
-//   $('.game-board').remove(square)
-//   level2;
-// });
-//
-// $('#levelButton3').on('click', function(){
-//   $('.game-board').remove(square)
-//   level3;
-// });
-//
-// $('#levelButton4').on('click', function(){
-//   $('.game-board').remove(square)
-//   level4;
-// });
-//
-// $('#levelButton5').on('click', function(){
-//   $('.game-board').remove(square)
-//   level5;
-// });
+$('#answers').on('click', function(){
+  alert("This button is still a work in progress. Try again some other time!");
+  // $('.puzzle-piece').on('focus', function(){
+  //   $('.puzzle-piece:nth-child(1)').val('5')
+  // });
+});
 
 /* ------------------------------
  VII. Sudoku Champion Alert
@@ -315,6 +294,23 @@ $('#levelButton1').on('click', function(){
       alert("Keep trying!");
     }
   });
+/* VIII c. Level 1 Errors Button */
+
+  // $('#errors').on('click', function(){
+  //   //toggle error checker mode
+  //   //turn on red where answers are incorrect
+  // });
+/* VIII d. Level 1 Hint Button */
+
+  // $('#hint').on('click', function(){
+  //   //fill current text input box with answer
+  // });
+/* VIII e. Level 1 Answers Button */
+
+  // $('#answers').on('click', function(){
+  //   //fill in all text input boxes with correct answers
+  // });
+
 });
 
 /* ------------------------------
@@ -324,7 +320,6 @@ $('#levelButton1').on('click', function(){
 $('#levelButton2').on('click', function(){
 
   createBoard();
-  // $('#progress').on('click', level2Progress);
   var level2 = $('.square h2').each(function(i, obj) {
     if (i === 1){
       $(obj).text(5);
@@ -521,6 +516,22 @@ $('#levelButton2').on('click', function(){
       alert("Keep trying!");
     }
   });
+/* IX c. Level 2 Errors Button */
+
+  // $('#errors').on('click', function(){
+  //   //toggle error checker mode
+  //   //turn on red where answers are incorrect
+  // });
+/* IX d. Level 2 Hint Button */
+
+  // $('#hint').on('click', function(){
+  //   //fill current text input box with answer
+  // });
+/* IX e. Level 2 Answers Button */
+
+  // $('#answers').on('click', function(){
+  //   //fill in all text input boxes with correct answers
+  // });
 });
 
 /* ------------------------------
@@ -707,6 +718,22 @@ $('#levelButton3').on('click', function(){
       alert("Keep trying!");
     }
   });
+/* X c. Level 3 Errors Button */
+
+  // $('#errors').on('click', function(){
+  //   //toggle error checker mode
+  //   //turn on red where answers are incorrect
+  // });
+/* X d. Level 3 Hint Button */
+
+  // $('#hint').on('click', function(){
+  //   //fill current text input box with answer
+  // });
+/* X e. Level 3 Answers Button */
+
+  // $('#answers').on('click', function(){
+  //   //fill in all text input boxes with correct answers
+  // });
 });
 
 /* ------------------------------
@@ -920,6 +947,22 @@ $('#levelButton4').on('click', function(){
       alert("Keep trying!");
     }
   });
+/* XI c. Level 4 Errors Button */
+
+  // $('#errors').on('click', function(){
+  //   //toggle error checker mode
+  //   //turn on red where answers are incorrect
+  // });
+/* XI d. Level 4 Hint Button */
+
+  // $('#hint').on('click', function(){
+  //   //fill current text input box with answer
+  // });
+/* XI e. Level 4 Answers Button */
+
+  // $('#answers').on('click', function(){
+  //   //fill in all text input boxes with correct answers
+  // });
 });
 /* ------------------------------
  XII. Level 5
@@ -1132,6 +1175,22 @@ $('#levelButton5').on('click', function(){
       alert("Keep trying!");
     }
   });
+/* XII c. Level 5 Errors Button */
+
+  // $('#errors').on('click', function(){
+  //   //toggle error checker mode
+  //   //turn on red where answers are incorrect
+  // });
+/* XII d. Level 5 Hint Button */
+
+  // $('#hint').on('click', function(){
+  //   //fill current text input box with answer
+  // });
+/* XII e. Level 5 Answers Button */
+
+  // $('#answers').on('click', function(){
+  //   //fill in all text input boxes with correct answers
+  // });
 });
 
 /* ------------------------------

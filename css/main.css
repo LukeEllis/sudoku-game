@@ -69,8 +69,8 @@ p {
 
 .levelButton {
   display: inline;
-  margin: 0;
-  width: 6.17em;
+  margin: .75em 0 0 0;
+  width: 8.55em;
 }
 
 .square:nth-child(1), .square:nth-child(2), .square:nth-child(3),
