@@ -2,6 +2,10 @@ console.log("JS connected");
 /* data-id: grabs data from specific id */
 
 /* ------------------------------
+ 0. Table of Contents
+------------------------------*/
+
+/* ------------------------------
  I. Create the Game Board
 ------------------------------*/
 
@@ -35,9 +39,9 @@ for (var j=1; j < 10; j++){
  III. Check For Errors Button
 ------------------------------*/
 
-$('#errors').on('click', function(){
-  alert("This button is still a work in progress. Try again some other time!");
-});
+// $('#errors').on('click', function(){
+//   alert("This button is still a work in progress. Try again some other time!");
+// });
 
 /* ------------------------------
  IV. Restart Level Button
@@ -51,12 +55,12 @@ $('#levelRestart').on('click', function(){
  V. Hint Button
 ------------------------------*/
 
-$('#hint').on('click', function(){
-  alert("This button is still a work in progress. Try again some other time!");
-  // $('.puzzle-piece').on('focus', function(){
-  //   $('.puzzle-piece:nth-child(1)').val('5')
-  // });
-});
+// $('#hint').on('click', function(){
+//   alert("This button is still a work in progress. Try again some other time!");
+//   // $('.puzzle-piece').on('focus', function(){
+//   //   $('.puzzle-piece:nth-child(1)').val('5')
+//   // });
+// });
 
 /* ------------------------------
  VI. Answers Button
@@ -64,9 +68,6 @@ $('#hint').on('click', function(){
 
 $('#answers').on('click', function(){
   alert("This button is still a work in progress. Try again some other time!");
-  // $('.puzzle-piece').on('focus', function(){
-  //   $('.puzzle-piece:nth-child(1)').val('5')
-  // });
 });
 
 /* ------------------------------
@@ -285,10 +286,8 @@ $('#levelButton1').on('click', function(){
       // Makes Level 1 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton1').attr("disabled", true);
       disabled;
+      // Checks for the Sudoku Champion
       champion();
-      // Clears Game Board
-      // var hideLevel = $('.square h2').hide();
-      // hideLevel;
     }
     else {
       alert("Keep trying!");
@@ -507,10 +506,8 @@ $('#levelButton2').on('click', function(){
       // Makes Level 2 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton2').attr("disabled", true);
       disabled;
+      // Checks for the Sudoku Champion
       champion();
-      // Clears Game Board
-      // var hideLevel = $('.square h2').hide();
-      // hideLevel;
     }
     else {
       alert("Keep trying!");
@@ -709,10 +706,8 @@ $('#levelButton3').on('click', function(){
       // Makes Level 3 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton3').attr("disabled", true);
       disabled;
+      // Checks for the Sudoku Champion
       champion();
-      // Clears Game Board
-      // var hidelevel = $('.square h2').hide();
-      // hidelevel;
     }
     else {
       alert("Keep trying!");
@@ -938,10 +933,8 @@ $('#levelButton4').on('click', function(){
       // Makes Level 4 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton4').attr("disabled", true);
       disabled;
+      // Checks for the Sudoku Champion
       champion();
-      // Clears Game Board
-      // var hidelevel = $('.square h2').hide();
-      // hidelevel;
     }
     else {
       alert("Keep trying!");
@@ -1166,10 +1159,8 @@ $('#levelButton5').on('click', function(){
       // Makes Level 5 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton5').attr("disabled", true);
       disabled;
+      // Checks for the Sudoku Champion
       champion();
-      // Clears Game Board
-      // var hidelevel = $('.square h2').hide();
-      // hidelevel;
     }
     else {
       alert("Keep trying!");
@@ -1192,10 +1183,3 @@ $('#levelButton5').on('click', function(){
   //   //fill in all text input boxes with correct answers
   // });
 });
-
-/* ------------------------------
- . Things to add
-------------------------------*/
-/* ----------------------------------------------------------------------
- 1) Prevent non-numeric inputs
----------------------------------------------------------------------*/
