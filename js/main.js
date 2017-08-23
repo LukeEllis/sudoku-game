@@ -305,9 +305,9 @@ $('#levelButton1').on('click', function(){
   //   //fill current text input box with answer
   // });
 /* VIII e. Level 1 Answers Button */
+//fills in all text input boxes with correct answers
 
   $('#answers').on('click', function(){
-    //fill in all text input boxes with correct answers
     let inputs = $("input");
     inputs.eq(0).val('8') &&
     inputs.eq(1).val('6') &&
@@ -562,10 +562,54 @@ $('#levelButton2').on('click', function(){
   //   //fill current text input box with answer
   // });
 /* IX e. Level 2 Answers Button */
+//fills in all text input boxes with correct answers
 
-  // $('#answers').on('click', function(){
-  //   //fill in all text input boxes with correct answers
-  // });
+  $('#answers').on('click', function(){
+    let inputs = $("input");
+    inputs.eq(0).val('2') &&
+    inputs.eq(1).val('1') &&
+    inputs.eq(2).val('9') &&
+    inputs.eq(3).val('6') &&
+    inputs.eq(4).val('8') &&
+    inputs.eq(5).val('3') &&
+    inputs.eq(6).val('5') &&
+    inputs.eq(7).val('1') &&
+    inputs.eq(8).val('4') &&
+    inputs.eq(9).val('4') &&
+    inputs.eq(10).val('9') &&
+    inputs.eq(11).val('1') &&
+    inputs.eq(12).val('6') &&
+    inputs.eq(13).val('5') &&
+    inputs.eq(14).val('9') &&
+    inputs.eq(15).val('7') &&
+    inputs.eq(16).val('8') &&
+    inputs.eq(17).val('5') &&
+    inputs.eq(18).val('6') &&
+    inputs.eq(19).val('2') &&
+    inputs.eq(20).val('4') &&
+    inputs.eq(21).val('9') &&
+    inputs.eq(22).val('3') &&
+    inputs.eq(23).val('5') &&
+    inputs.eq(24).val('3') &&
+    inputs.eq(25).val('6') &&
+    inputs.eq(26).val('1') &&
+    inputs.eq(27).val('7') &&
+    inputs.eq(28).val('9') &&
+    inputs.eq(29).val('4') &&
+    inputs.eq(30).val('7') &&
+    inputs.eq(31).val('6') &&
+    inputs.eq(32).val('1') &&
+    inputs.eq(33).val('9') &&
+    inputs.eq(34).val('3') &&
+    inputs.eq(35).val('1') &&
+    inputs.eq(36).val('4') &&
+    inputs.eq(37).val('7') &&
+    inputs.eq(38).val('3') &&
+    inputs.eq(39).val('9') &&
+    inputs.eq(40).val('7') &&
+    inputs.eq(41).val('2') &&
+    inputs.eq(42).val('4')
+  });
 });
 
 /* ------------------------------
@@ -762,10 +806,62 @@ $('#levelButton3').on('click', function(){
   //   //fill current text input box with answer
   // });
 /* X e. Level 3 Answers Button */
+//fills in all text input boxes with correct answers
 
-  // $('#answers').on('click', function(){
-  //   //fill in all text input boxes with correct answers
-  // });
+  $('#answers').on('click', function(){
+    let inputs = $("input");
+    inputs.eq(0).val('8') &&
+    inputs.eq(1).val('3') &&
+    inputs.eq(2).val('6') &&
+    inputs.eq(3).val('7') &&
+    inputs.eq(4).val('1') &&
+    inputs.eq(5).val('1') &&
+    inputs.eq(6).val('9') &&
+    inputs.eq(7).val('6') &&
+    inputs.eq(8).val('2') &&
+    inputs.eq(9).val('4') &&
+    inputs.eq(10).val('7') &&
+    inputs.eq(11).val('3') &&
+    inputs.eq(12).val('4') &&
+    inputs.eq(13).val('8') &&
+    inputs.eq(14).val('6') &&
+    inputs.eq(15).val('9') &&
+    inputs.eq(16).val('4') &&
+    inputs.eq(17).val('6') &&
+    inputs.eq(18).val('8') &&
+    inputs.eq(19).val('7') &&
+    inputs.eq(20).val('2') &&
+    inputs.eq(21).val('5') &&
+    inputs.eq(22).val('2') &&
+    inputs.eq(23).val('7') &&
+    inputs.eq(24).val('5') &&
+    inputs.eq(25).val('3') &&
+    inputs.eq(26).val('4') &&
+    inputs.eq(27).val('8') &&
+    inputs.eq(28).val('5') &&
+    inputs.eq(29).val('8') &&
+    inputs.eq(30).val('1') &&
+    inputs.eq(31).val('7') &&
+    inputs.eq(32).val('4') &&
+    inputs.eq(33).val('6') &&
+    inputs.eq(34).val('7') &&
+    inputs.eq(35).val('1') &&
+    inputs.eq(36).val('9') &&
+    inputs.eq(37).val('6') &&
+    inputs.eq(38).val('4') &&
+    inputs.eq(39).val('2') &&
+    inputs.eq(40).val('6') &&
+    inputs.eq(41).val('1') &&
+    inputs.eq(42).val('8') &&
+    inputs.eq(43).val('2') &&
+    inputs.eq(44).val('3') &&
+    inputs.eq(45).val('5') &&
+    inputs.eq(46).val('8') &&
+    inputs.eq(47).val('4') &&
+    inputs.eq(48).val('5') &&
+    inputs.eq(49).val('9') &&
+    inputs.eq(50).val('1')
+  });
 });
 
 /* ------------------------------
