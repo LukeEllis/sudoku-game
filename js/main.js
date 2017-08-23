@@ -69,12 +69,13 @@ for (var j=1; j < 10; j++){
 }
 
 /* ------------------------------
- III. Check For Errors Button
+ III. Solution Arrays
 ------------------------------*/
-
-// $('#errors').on('click', function(){
-//   alert("This button is still a work in progress. Try again some other time!");
-// });
+let answerArray1 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
+let answerArray2 = [2, 1, 9, 6, 8, 3, 5, 1, 4, 4, 9, 1, 6, 5, 9, 7, 8, 5, 6, 2, 4, 9, 3, 5, 3, 6, 1, 7, 9, 4, 7, 6, 1, 9, 3, 1, 4, 7, 3, 9, 7, 2, 4];
+let answerArray3 = [8, 3, 6, 7, 1, 1, 9, 6, 2, 4, 7, 3, 4, 8, 6, 9, 4, 6, 8, 7, 2, 5, 2, 7, 5, 3, 4, 8, 5, 8, 1, 7, 4, 6, 7, 1, 9, 6, 4, 2, 6, 1, 8, 2, 3, 5, 8, 4, 5, 9, 1];
+let answerArray4 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
+let answerArray5 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
 
 /* ------------------------------
  IV. Restart Level Button
@@ -259,17 +260,6 @@ $('#levelButton1').on('click', function(){
 
     $('#progress').on('click', function(){
     let inputs = $("input");
-    let levelOneSolution = [
-      8, 6, 5, 9,
-      9, 4, 2, 6,
-      1, 7, 9, 8,
-      8, 1, 4, 2,
-      1, 6, 3, 4,
-      7, 8, 2, 1,
-      9, 3, 5, 7,
-      7, 3, 1, 6,
-      4, 9, 7, 8,
-    ];
     if (inputs.eq(0).val() == 8 &&
         inputs.eq(1).val() == 6 &&
         inputs.eq(2).val() == 5 &&
@@ -322,9 +312,8 @@ $('#levelButton1').on('click', function(){
 
   $('#errors').on('click', function(){
     let inputs = $("input.puzzle-piece");
-    let answerArray = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
     for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray[i]) {
+      if (inputs.eq(i).val() == answerArray1[i]) {
         inputs.eq(i).css('background-color', 'white');
       } else {
         inputs.eq(i).css('background-color', 'red');
@@ -523,17 +512,6 @@ $('#levelButton2').on('click', function(){
 /* IX b. Level 2 Solution Logic */
   $('#progress').on('click', function(){
     let inputs = $("input");
-    let levelTwoSolution = [
-      2, 1, 9, 6,
-      8, 3, 5, 1, 4,
-      4, 9, 1, 6, 5,
-      9, 7, 8, 5, 6,
-      2, 4, 9, 3, 5,
-      3, 6, 1, 7, 9,
-      4, 7, 6, 1, 9,
-      3, 1, 4, 7,
-      3, 9, 7, 2, 4
-    ];
     if (inputs.eq(0).val() == 2 &&
         inputs.eq(1).val() == 1 &&
         inputs.eq(2).val() == 9 &&
@@ -593,19 +571,8 @@ $('#levelButton2').on('click', function(){
 
   $('#errors').on('click', function(){
     let inputs = $("input.puzzle-piece");
-    let answerArray = [
-      2, 1, 9, 6,
-      8, 3, 5, 1, 4,
-      4, 9, 1, 6, 5,
-      9, 7, 8, 5, 6,
-      2, 4, 9, 3, 5,
-      3, 6, 1, 7, 9,
-      4, 7, 6, 1, 9,
-      3, 1, 4, 7,
-      3, 9, 7, 2, 4
-    ];
     for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray[i]) {
+      if (inputs.eq(i).val() == answerArray2[i]) {
         inputs.eq(i).css('background-color', 'white');
       } else {
         inputs.eq(i).css('background-color', 'red');
@@ -776,17 +743,6 @@ $('#levelButton3').on('click', function(){
 /* X b. Level 3 Solution Logic */
   $('#progress').on('click', function(){
     let inputs = $("input");
-    let levelThreeSolution = [
-      8, 3, 6, 7, 1,
-      1, 9, 6, 2, 4,
-      7, 3, 4, 8, 6, 9,
-      4, 6, 8, 7, 2, 5,
-      2, 7, 5, 3, 4, 8,
-      5, 8, 1, 7, 4, 6,
-      7, 1, 9, 6, 4, 2,
-      6, 1, 8, 2, 3, 5,
-      8, 4, 5, 9, 1
-    ];
     if (inputs.eq(0).val() == 8 &&
         inputs.eq(1).val() == 3 &&
         inputs.eq(2).val() == 6 &&
@@ -854,19 +810,8 @@ $('#levelButton3').on('click', function(){
 
   $('#errors').on('click', function(){
     let inputs = $("input.puzzle-piece");
-    let answerArray = [
-      8, 3, 6, 7, 1,
-      1, 9, 6, 2, 4,
-      7, 3, 4, 8, 6, 9,
-      4, 6, 8, 7, 2, 5,
-      2, 7, 5, 3, 4, 8,
-      5, 8, 1, 7, 4, 6,
-      7, 1, 9, 6, 4, 2,
-      6, 1, 8, 2, 3, 5,
-      8, 4, 5, 9, 1
-    ];
     for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray[i]) {
+      if (inputs.eq(i).val() == answerArray3[i]) {
         inputs.eq(i).css('background-color', 'white');
       } else {
         inputs.eq(i).css('background-color', 'red');
@@ -1087,17 +1032,6 @@ $('#levelButton4').on('click', function(){
 /* XI b. Level 4 Solution Logic */
   $('#progress').on('click', function(){
     let inputs = $("input");
-    let levelFourSolution = [
-      8, 6, 5, 9,
-      9, 4, 2, 6,
-      1, 7, 9, 8,
-      8, 1, 4, 2,
-      1, 6, 3, 4,
-      7, 8, 2, 1,
-      9, 3, 5, 7,
-      7, 3, 1, 6,
-      4, 9, 7, 8,
-    ];
     if (inputs.eq(0).val() == 8 &&
         inputs.eq(1).val() == 6 &&
         inputs.eq(2).val() == 5 &&
@@ -1150,19 +1084,8 @@ $('#levelButton4').on('click', function(){
 
   $('#errors').on('click', function(){
     let inputs = $("input.puzzle-piece");
-    let answerArray = [
-      8, 6, 5, 9,
-      9, 4, 2, 6,
-      1, 7, 9, 8,
-      8, 1, 4, 2,
-      1, 6, 3, 4,
-      7, 8, 2, 1,
-      9, 3, 5, 7,
-      7, 3, 1, 6,
-      4, 9, 7, 8,
-    ];
     for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray[i]) {
+      if (inputs.eq(i).val() == answerArray4[i]) {
         inputs.eq(i).css('background-color', 'white');
       } else {
         inputs.eq(i).css('background-color', 'red');
@@ -1330,17 +1253,6 @@ $('#levelButton5').on('click', function(){
 /* XII b. Level 5 Solution Logic */
   $('#progress').on('click', function(){
     let inputs = $("input");
-    let levelFiveSolution = [
-      8, 6, 5, 9,
-      9, 4, 2, 6,
-      1, 7, 9, 8,
-      8, 1, 4, 2,
-      1, 6, 3, 4,
-      7, 8, 2, 1,
-      9, 3, 5, 7,
-      7, 3, 1, 6,
-      4, 9, 7, 8,
-    ];
     if (inputs.eq(0).val() == 8 &&
         inputs.eq(1).val() == 6 &&
         inputs.eq(2).val() == 5 &&
@@ -1393,19 +1305,8 @@ $('#levelButton5').on('click', function(){
 
   $('#errors').on('click', function(){
     let inputs = $("input.puzzle-piece");
-    let answerArray = [
-      8, 6, 5, 9,
-      9, 4, 2, 6,
-      1, 7, 9, 8,
-      8, 1, 4, 2,
-      1, 6, 3, 4,
-      7, 8, 2, 1,
-      9, 3, 5, 7,
-      7, 3, 1, 6,
-      4, 9, 7, 8,
-    ];
     for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray[i]) {
+      if (inputs.eq(i).val() == answerArray5[i]) {
         inputs.eq(i).css('background-color', 'white');
       } else {
         inputs.eq(i).css('background-color', 'red');
