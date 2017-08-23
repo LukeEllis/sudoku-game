@@ -66,9 +66,9 @@ $('#levelRestart').on('click', function(){
  VI. Answers Button
 ------------------------------*/
 
-$('#answers').on('click', function(){
-  alert("This button is still a work in progress. Try again some other time!");
-});
+// $('#answers').on('click', function(){
+//   alert("This button is still a work in progress. Try again some other time!");
+// });
 
 /* ------------------------------
  VII. Sudoku Champion Alert
