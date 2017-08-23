@@ -7,6 +7,7 @@ console.log("JS connected");
 ------------------------------*/
 var createBoard = function (){
   $('.game-board').empty();
+  $('#progress').off('click');
   for (var i = 0; i < 81; i++){
     let square = $("<div class='square'></div>")
     square.append('<h2></h2>')
@@ -248,7 +249,8 @@ $('#levelButton1').on('click', function(){
     }
   });
 /* VIII b. Level 1 Solution Logic */
-  $('#progress').on('click', function(){
+
+    $('#progress').on('click', function(){
     let inputs = $("input");
     let levelOneSolution = [
       8, 6, 5, 9,
@@ -319,6 +321,7 @@ $('#levelButton1').on('click', function(){
 $('#levelButton2').on('click', function(){
 
   createBoard();
+  // $('#progress').on('click', level2Progress);
   var level2 = $('.square h2').each(function(i, obj) {
     if (i === 1){
       $(obj).text(5);
