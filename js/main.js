@@ -305,7 +305,6 @@ $('#levelButton1').on('click', function(){
       // Clears Game Board
       // var hideLevel = $('.square h2').hide();
       // hideLevel;
-      createBoard();
     }
     else {
       alert("Keep trying!");
@@ -510,7 +509,6 @@ $('#levelButton2').on('click', function(){
       // Clears Game Board
       // var hideLevel = $('.square h2').hide();
       // hideLevel;
-      createBoard();
     }
     else {
       alert("Keep trying!");
@@ -903,7 +901,7 @@ $('#levelButton4').on('click', function(){
         inputs.eq(35).val() == 8
     ){
       alert("Congratulations, you've beaten Level 4!!!");
-      // Makes Level 1 button unclickable for future Sudoku Champion check
+      // Makes Level 4 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton4').attr("disabled", true);
       disabled;
       // Clears Game Board
@@ -1114,7 +1112,7 @@ $('#levelButton5').on('click', function(){
         inputs.eq(35).val() == 8
     ){
       alert("Congratulations, you've beaten Level 5!!!");
-      // Makes Level 1 button unclickable for future Sudoku Champion check
+      // Makes Level 5 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton5').attr("disabled", true);
       disabled;
       // Clears Game Board
