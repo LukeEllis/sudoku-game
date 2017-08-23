@@ -95,11 +95,13 @@ $('#hint').on('click', function(){
 ------------------------------*/
 /* If all buttons are disabled, the player is crowned the Sudoku Champion */
 
-// if ($('#levelButton1').attr("disabled", true) && $('#levelButton2').attr("disabled", true)
-//     && $('#levelButton3').attr("disabled", true) && $('#levelButton4').attr("disabled", true)
-//     && $('#levelButton5').attr("disabled", true)){
-//       alert("Congratulations, you are officially the Sudoku Champion!!!")
-// }
+var champion = function(){
+  if ($('#levelButton1').is(":disabled") && $('#levelButton2').is(":disabled")
+      && $('#levelButton3').is(":disabled") && $('#levelButton4').is(":disabled")
+      && $('#levelButton5').is(":disabled")){
+        alert("Congratulations, you are officially the Sudoku Champion!!!")
+    };
+};
 
 /* ------------------------------
  VIII. Level 1
@@ -304,6 +306,7 @@ $('#levelButton1').on('click', function(){
       // Makes Level 1 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton1').attr("disabled", true);
       disabled;
+      champion();
       // Clears Game Board
       // var hideLevel = $('.square h2').hide();
       // hideLevel;
@@ -509,6 +512,7 @@ $('#levelButton2').on('click', function(){
       // Makes Level 2 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton2').attr("disabled", true);
       disabled;
+      champion();
       // Clears Game Board
       // var hideLevel = $('.square h2').hide();
       // hideLevel;
@@ -694,6 +698,7 @@ $('#levelButton3').on('click', function(){
       // Makes Level 3 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton3').attr("disabled", true);
       disabled;
+      champion();
       // Clears Game Board
       // var hidelevel = $('.square h2').hide();
       // hidelevel;
@@ -906,6 +911,7 @@ $('#levelButton4').on('click', function(){
       // Makes Level 4 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton4').attr("disabled", true);
       disabled;
+      champion();
       // Clears Game Board
       // var hidelevel = $('.square h2').hide();
       // hidelevel;
@@ -1117,6 +1123,7 @@ $('#levelButton5').on('click', function(){
       // Makes Level 5 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton5').attr("disabled", true);
       disabled;
+      champion();
       // Clears Game Board
       // var hidelevel = $('.square h2').hide();
       // hidelevel;
