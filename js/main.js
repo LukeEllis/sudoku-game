@@ -5,11 +5,17 @@ console.log("JS connected");
 /* ------------------------------
  I. Create the Game Board
 ------------------------------*/
+// $(function(){
+//   createBoard();
+// });
 
-for (var i = 0; i < 81; i++){
-  let square = $("<div class='square'></div>")
-  square.append('<h2></h2>')
-  $('.game-board').append(square)
+var createBoard = function (){
+  $('.game-board').empty();
+  for (var i = 0; i < 81; i++){
+    let square = $("<div class='square'></div>")
+    square.append('<h2></h2>')
+    $('.game-board').append(square)
+  }
 }
 
 /* ------------------------------
@@ -92,11 +98,11 @@ $('#hint').on('click', function(){
 ------------------------------*/
 /* If all buttons are disabled, the player is crowned the Sudoku Champion */
 
-if ($('#levelButton1').attr("disabled", true) && $('#levelButton2').attr("disabled", true)
-    $('#levelButton3').attr("disabled", true) && $('#levelButton4').attr("disabled", true)
-    && $('#levelButton5').attr("disabled", true)){
-      alert("Congratulations, you are officially the Sudoku Champion!!!")
-}
+// if ($('#levelButton1').attr("disabled", true) && $('#levelButton2').attr("disabled", true)
+//     && $('#levelButton3').attr("disabled", true) && $('#levelButton4').attr("disabled", true)
+//     && $('#levelButton5').attr("disabled", true)){
+//       alert("Congratulations, you are officially the Sudoku Champion!!!")
+// }
 
 /* ------------------------------
  VIII. Level 1
@@ -104,6 +110,7 @@ if ($('#levelButton1').attr("disabled", true) && $('#levelButton2').attr("disabl
 /* VIII a. Fill Level 1 */
 $('#levelButton1').on('click', function(){
 
+  createBoard();
   var level1 = $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
@@ -241,6 +248,7 @@ $('#levelButton1').on('click', function(){
       $(obj).text(5);
     }
     else{
+      // $(obj).remove('.puzzle-piece');
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -300,8 +308,9 @@ $('#levelButton1').on('click', function(){
       var disabled = $('#levelButton1').attr("disabled", true);
       disabled;
       // Clears Game Board
-      var hidelevel = $('.square h2').hide();
-      hidelevel;
+      // var hideLevel = $('.square h2').hide();
+      // hideLevel;
+      createBoard();
     }
     else {
       alert("Keep trying!");
@@ -315,6 +324,7 @@ $('#levelButton1').on('click', function(){
 /* IX a. Fill Level 2 */
 $('#levelButton2').on('click', function(){
 
+  createBoard();
   var level2 = $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
@@ -449,9 +459,10 @@ $('#levelButton2').on('click', function(){
       $(obj).text(3);
     }
     else if (i === 80){
-      $(obj).text(5);
+      $(obj).text(7);
     }
     else{
+      // $(obj).remove('.puzzle-piece');
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -511,8 +522,8 @@ $('#levelButton2').on('click', function(){
       var disabled = $('#levelButton2').attr("disabled", true);
       disabled;
       // Clears Game Board
-      var hidelevel = $('.square h2').hide();
-      hidelevel;
+      var hideLevel = $('.square h2').hide();
+      hideLevel;
     }
     else {
       alert("Keep trying!");
