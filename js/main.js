@@ -5,10 +5,6 @@ console.log("JS connected");
 /* ------------------------------
  I. Create the Game Board
 ------------------------------*/
-// $(function(){
-//   createBoard();
-// });
-
 var createBoard = function (){
   $('.game-board').empty();
   for (var i = 0; i < 81; i++){
@@ -248,7 +244,6 @@ $('#levelButton1').on('click', function(){
       $(obj).text(5);
     }
     else{
-      // $(obj).remove('.puzzle-piece');
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -459,10 +454,9 @@ $('#levelButton2').on('click', function(){
       $(obj).text(3);
     }
     else if (i === 80){
-      $(obj).text(7);
+      $(obj).text(6);
     }
     else{
-      // $(obj).remove('.puzzle-piece');
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -522,8 +516,9 @@ $('#levelButton2').on('click', function(){
       var disabled = $('#levelButton2').attr("disabled", true);
       disabled;
       // Clears Game Board
-      var hideLevel = $('.square h2').hide();
-      hideLevel;
+      // var hideLevel = $('.square h2').hide();
+      // hideLevel;
+      createBoard();
     }
     else {
       alert("Keep trying!");
@@ -537,6 +532,7 @@ $('#levelButton2').on('click', function(){
 /* X a. Fill Level 3 */
 $('#levelButton3').on('click', function(){
 
+  createBoard();
   var level3 = $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
@@ -671,7 +667,7 @@ $('#levelButton3').on('click', function(){
       $(obj).text(3);
     }
     else if (i === 80){
-      $(obj).text(5);
+      $(obj).text(7);
     }
     else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
@@ -733,8 +729,9 @@ $('#levelButton3').on('click', function(){
       var disabled = $('#levelButton3').attr("disabled", true);
       disabled;
       // Clears Game Board
-      var hidelevel = $('.square h2').hide();
-      hidelevel;
+      // var hidelevel = $('.square h2').hide();
+      // hidelevel;
+      createBoard();
     }
     else {
       alert("Keep trying!");
@@ -748,6 +745,7 @@ $('#levelButton3').on('click', function(){
 /* XI a. Fill Level 4 */
 $('#levelButton4').on('click', function(){
 
+  createBoard();
   var level4 = $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
@@ -882,7 +880,7 @@ $('#levelButton4').on('click', function(){
       $(obj).text(3);
     }
     else if (i === 80){
-      $(obj).text(5);
+      $(obj).text(8);
     }
     else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
@@ -958,6 +956,7 @@ $('#levelButton4').on('click', function(){
 /* XII a. Fill Level 5 */
 $('#levelButton5').on('click', function(){
 
+  createBoard();
   var level5 = $('.square h2').each(function(i, obj) {
     if (i === 0){
       $(obj).text(4);
@@ -1092,7 +1091,7 @@ $('#levelButton5').on('click', function(){
       $(obj).text(3);
     }
     else if (i === 80){
-      $(obj).text(5);
+      $(obj).text(9);
     }
     else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
