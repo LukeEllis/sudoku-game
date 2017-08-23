@@ -627,55 +627,70 @@ $('#levelButton3').on('click', function(){
   $('#progress').on('click', function(){
     let inputs = $("input");
     let levelThreeSolution = [
-      8, 6, 5, 9,
-      9, 4, 2, 6,
-      1, 7, 9, 8,
-      8, 1, 4, 2,
-      1, 6, 3, 4,
-      7, 8, 2, 1,
-      9, 3, 5, 7,
-      7, 3, 1, 6,
-      4, 9, 7, 8,
+      8, 3, 6, 7, 1,
+      1, 9, 6, 2, 4,
+      7, 3, 4, 8, 6, 9,
+      4, 6, 8, 7, 2, 5,
+      2, 7, 5, 3, 4, 8,
+      5, 8, 1, 7, 4, 6,
+      7, 1, 9, 6, 4, 2,
+      6, 1, 8, 2, 3, 5,
+      8, 4, 5, 9, 1
     ];
     if (inputs.eq(0).val() == 8 &&
-        inputs.eq(1).val() == 6 &&
-        inputs.eq(2).val() == 5 &&
-        inputs.eq(3).val() == 9 &&
-        inputs.eq(4).val() == 9 &&
-        inputs.eq(5).val() == 4 &&
-        inputs.eq(6).val() == 2 &&
+        inputs.eq(1).val() == 3 &&
+        inputs.eq(2).val() == 6 &&
+        inputs.eq(3).val() == 7 &&
+        inputs.eq(4).val() == 1 &&
+        inputs.eq(5).val() == 1 &&
+        inputs.eq(6).val() == 9 &&
         inputs.eq(7).val() == 6 &&
-        inputs.eq(8).val() == 1 &&
-        inputs.eq(9).val() == 7 &&
-        inputs.eq(10).val() == 9 &&
-        inputs.eq(11).val() == 8 &&
-        inputs.eq(12).val() == 8 &&
-        inputs.eq(13).val() == 1 &&
-        inputs.eq(14).val() == 4 &&
-        inputs.eq(15).val() == 2 &&
-        inputs.eq(16).val() == 1 &&
+        inputs.eq(8).val() == 2 &&
+        inputs.eq(9).val() == 4 &&
+        inputs.eq(10).val() == 7 &&
+        inputs.eq(11).val() == 3 &&
+        inputs.eq(12).val() == 4 &&
+        inputs.eq(13).val() == 8 &&
+        inputs.eq(14).val() == 6 &&
+        inputs.eq(15).val() == 9 &&
+        inputs.eq(16).val() == 4 &&
         inputs.eq(17).val() == 6 &&
-        inputs.eq(18).val() == 3 &&
-        inputs.eq(19).val() == 4 &&
-        inputs.eq(20).val() == 7 &&
-        inputs.eq(21).val() == 8 &&
+        inputs.eq(18).val() == 8 &&
+        inputs.eq(19).val() == 7 &&
+        inputs.eq(20).val() == 2 &&
+        inputs.eq(21).val() == 5 &&
         inputs.eq(22).val() == 2 &&
-        inputs.eq(23).val() == 1 &&
-        inputs.eq(24).val() == 9 &&
+        inputs.eq(23).val() == 7 &&
+        inputs.eq(24).val() == 5 &&
         inputs.eq(25).val() == 3 &&
-        inputs.eq(26).val() == 5 &&
-        inputs.eq(27).val() == 7 &&
-        inputs.eq(28).val() == 7 &&
-        inputs.eq(29).val() == 3 &&
+        inputs.eq(26).val() == 4 &&
+        inputs.eq(27).val() == 8 &&
+        inputs.eq(28).val() == 5 &&
+        inputs.eq(29).val() == 8 &&
         inputs.eq(30).val() == 1 &&
-        inputs.eq(31).val() == 6 &&
+        inputs.eq(31).val() == 7 &&
         inputs.eq(32).val() == 4 &&
-        inputs.eq(33).val() == 9 &&
+        inputs.eq(33).val() == 6 &&
         inputs.eq(34).val() == 7 &&
-        inputs.eq(35).val() == 8
+        inputs.eq(35).val() == 1 &&
+        inputs.eq(36).val() == 9 &&
+        inputs.eq(37).val() == 6 &&
+        inputs.eq(38).val() == 4 &&
+        inputs.eq(39).val() == 2 &&
+        inputs.eq(40).val() == 6 &&
+        inputs.eq(41).val() == 1 &&
+        inputs.eq(42).val() == 8 &&
+        inputs.eq(43).val() == 2 &&
+        inputs.eq(44).val() == 3 &&
+        inputs.eq(45).val() == 5 &&
+        inputs.eq(46).val() == 8 &&
+        inputs.eq(47).val() == 4 &&
+        inputs.eq(48).val() == 5 &&
+        inputs.eq(49).val() == 9 &&
+        inputs.eq(50).val() == 1
     ){
       alert("Congratulations, you've beaten Level 3!!!");
-      // Makes Level 1 button unclickable for future Sudoku Champion check
+      // Makes Level 3 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton3').attr("disabled", true);
       disabled;
       // Clears Game Board
