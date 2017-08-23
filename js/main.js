@@ -90,12 +90,13 @@ $('#hint').on('click', function(){
 /* ------------------------------
  VII. Sudoku Champion Alert
 ------------------------------*/
-// Currently Disables Level Buttons and automatically awards the player Sudoku Champion
+/* If all buttons are disabled, the player is crowned the Sudoku Champion */
 
-// while ($('.levelButton').attr("disabled", true)){
-//       alert("Congratulations, you are officially the Sudoku Champion!!!")
-//       break;
-// }
+if ($('#levelButton1').attr("disabled", true) && $('#levelButton2').attr("disabled", true)
+    $('#levelButton3').attr("disabled", true) && $('#levelButton4').attr("disabled", true)
+    && $('#levelButton5').attr("disabled", true)){
+      alert("Congratulations, you are officially the Sudoku Champion!!!")
+}
 
 /* ------------------------------
  VIII. Level 1
