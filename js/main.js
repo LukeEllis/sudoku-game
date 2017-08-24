@@ -4,34 +4,34 @@
  II. Restart Level Button
  III. Sudoku Champion Alert
  IV. Level 1
- V. a. Fill Level 1
- V. b. Level 1 Solution Logic
- V. c. Level 1 Errors Button
- V. d. Level 1 Answers Button
- VI. Level 2
- VI. a. Fill Level 2
- VI. b. Level 2 Solution Logic
- VI. c. Level 2 Errors Button
- VI. d. Level 2 Answers Button
- VII. Level 3
- VII. a. Fill Level 3
- VII. b. Level 3 Solution Logic
- VII. c. Level 3 Errors Button
- VII. d. Level 3 Answers Button
- VIII. Level 4
- VIII. a. Fill Level 4 (Incomplete)
- VIII. b. Level 4 Solution Logic
- VIII. c. Level 4 Errors Button
- VIII. d. Level 4 Answers Button
- IX. Level 5
- IX. a. Fill Level 5 (Incomplete)
- IX. b. Level 5 Solution Logic
- IX. c. Level 5 Errors Button
- IX. d. Level 5 Answers Button
- X. Future Features
- X. a. Give Me A Hint Buttons
- X. b. Grid Buttons
- X. c. Pencil Marking Options
+ IV. a. Fill Level 1
+ IV. b. Level 1 Solution Logic
+ IV. c. Level 1 Errors Button
+ IV. d. Level 1 Answers Button
+ V. Level 2
+ V. a. Fill Level 2
+ V. b. Level 2 Solution Logic
+ V. c. Level 2 Errors Button
+ V. d. Level 2 Answers Button
+ VI. Level 3
+ VI. a. Fill Level 3
+ VI. b. Level 3 Solution Logic
+ VI. c. Level 3 Errors Button
+ VI. d. Level 3 Answers Button
+ VII. Level 4
+ VII. a. Fill Level 4 (Incomplete)
+ VII. b. Level 4 Solution Logic
+ VII. c. Level 4 Errors Button
+ VII. d. Level 4 Answers Button
+ VIII. Level 5
+ VIII. a. Fill Level 5 (Incomplete)
+ VIII. b. Level 5 Solution Logic
+ VIII. c. Level 5 Errors Button
+ VIII. d. Level 5 Answers Button
+ IX. Future Features
+ IX. a. Give Me A Hint Buttons
+ IX. b. Grid Buttons
+ IX. c. Pencil Marking Options
 ------------------------------*/
 
 /* ------------------------------
@@ -52,20 +52,7 @@ var createBoard = function (){
 }
 
 /* ------------------------------
- II. Grid Buttons
-------------------------------*/
-
-for (var j=1; j < 10; j++){
-  let gridButton = $("<input type='button' value='' >")
-  gridButton.attr('value', j)
-  $('#gridButtonsBar').append(gridButton)
-  gridButton.on('click', function(){
-    alert("This button is still a work in progress. Try again some other time!");
-  })
-}
-
-/* ------------------------------
- III. Restart Level Button
+ II. Restart Level Button
 ------------------------------*/
 
 $('#levelRestart').on('click', function(){
@@ -73,7 +60,7 @@ $('#levelRestart').on('click', function(){
 });
 
 /* ------------------------------
- IV. Sudoku Champion Alert
+ III. Sudoku Champion Alert
 ------------------------------*/
 /* If all buttons are disabled, the player is crowned the Sudoku Champion */
 
@@ -86,9 +73,9 @@ var champion = function(){
 };
 
 /* ------------------------------
- V. Level 1
+ IV. Level 1
 ------------------------------*/
-/* V. a. Fill Level 1 */
+/* IV. a. Fill Level 1 */
 $('#levelButton1').on('click', function(){
 
   createBoard();
@@ -101,7 +88,7 @@ $('#levelButton1').on('click', function(){
     }
   });
 
-/* V. b. Level 1 Solution Logic */
+/* IV. b. Level 1 Solution Logic */
 
     $('#progress').on('click', function(){
       let all_answers_correct = [];
@@ -143,7 +130,7 @@ $('#levelButton1').on('click', function(){
       }
     });
 
-/* V. c. Level 1 Errors Button */
+/* IV. c. Level 1 Errors Button */
 
   $('#errors').on('click', function(){
     let boxes = $('.square h2');
@@ -170,7 +157,7 @@ $('#levelButton1').on('click', function(){
     })
   });
 
-/* V d. Level 1 Answers Button */
+/* IV. d. Level 1 Answers Button */
 //fills in all text input boxes with correct answers
   $('#answers').on('click', function(){
     let boxes = $('.square h2');
@@ -197,9 +184,9 @@ $('#levelButton1').on('click', function(){
 });
 
 /* ------------------------------
- VI. Level 2
+ V. Level 2
 ------------------------------*/
-/* VI. a. Fill Level 2 */
+/* V. a. Fill Level 2 */
 $('#levelButton2').on('click', function(){
 
   createBoard();
@@ -212,7 +199,7 @@ $('#levelButton2').on('click', function(){
     }
   });
 
-/* VI. b. Level 2 Solution Logic */
+/* V. b. Level 2 Solution Logic */
 
   $('#progress').on('click', function(){
     let all_answers_correct = [];
@@ -253,7 +240,7 @@ $('#levelButton2').on('click', function(){
       alert("Keep trying!");
     }
   });
-/* VI. c. Level 2 Errors Button */
+/* V. c. Level 2 Errors Button */
 
   $('#errors').on('click', function(){
     let boxes = $('.square h2');
@@ -279,7 +266,7 @@ $('#levelButton2').on('click', function(){
       }
     })
   });
-/* VI. d. Level 2 Answers Button */
+/* V. d. Level 2 Answers Button */
 //fills in all text input boxes with correct answers
 
   $('#answers').on('click', function(){
@@ -307,9 +294,9 @@ $('#levelButton2').on('click', function(){
 });
 
 /* ------------------------------
- VII. Level 3
+ VI. Level 3
 ------------------------------*/
-/* VII. a. Fill Level 3 */
+/* VI. a. Fill Level 3 */
 $('#levelButton3').on('click', function(){
 
   createBoard();
@@ -321,7 +308,7 @@ $('#levelButton3').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
-/* VII. b. Level 3 Solution Logic */
+/* VI. b. Level 3 Solution Logic */
   $('#progress').on('click', function(){
     let all_answers_correct = [];
     let boxes = $('.square h2');
@@ -361,7 +348,7 @@ $('#levelButton3').on('click', function(){
       alert("Keep trying!");
     }
   });
-/* VII. c. Level 3 Errors Button */
+/* VI. c. Level 3 Errors Button */
 
   $('#errors').on('click', function(){
     let boxes = $('.square h2');
@@ -387,7 +374,7 @@ $('#levelButton3').on('click', function(){
       }
     })
   });
-/* VII. d. Level 3 Answers Button */
+/* VI. d. Level 3 Answers Button */
 //fills in all text input boxes with correct answers
 
   $('#answers').on('click', function(){
@@ -415,9 +402,9 @@ $('#levelButton3').on('click', function(){
 });
 
 /* ------------------------------
- VIII. Level 4
+ VII. Level 4
 ------------------------------*/
-/* VIII. a. Fill Level 4 */
+/* VII. a. Fill Level 4 */
 $('#levelButton4').on('click', function(){
 
   createBoard();
@@ -429,7 +416,7 @@ $('#levelButton4').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
-/* VIII. b. Level 4 Solution Logic */
+/* VII. b. Level 4 Solution Logic */
   $('#progress').on('click', function(){
     let all_answers_correct = [];
     let boxes = $('.square h2');
@@ -469,7 +456,7 @@ $('#levelButton4').on('click', function(){
       alert("Keep trying!");
     }
   });
-/* VIII. c. Level 4 Errors Button */
+/* VII. c. Level 4 Errors Button */
 
   $('#errors').on('click', function(){
     let boxes = $('.square h2');
@@ -495,7 +482,7 @@ $('#levelButton4').on('click', function(){
       }
     })
   });
-/* VIII. d. Level 4 Answers Button */
+/* VII. d. Level 4 Answers Button */
 
   $('#answers').on('click', function(){
     let boxes = $('.square h2');
@@ -522,9 +509,9 @@ $('#levelButton4').on('click', function(){
 });
 
 /* ------------------------------
- IX. Level 5
+ VIII. Level 5
 ------------------------------*/
-/* IX. a. Fill Level 5 */
+/* VIII. a. Fill Level 5 */
 $('#levelButton5').on('click', function(){
 
   createBoard();
@@ -536,7 +523,7 @@ $('#levelButton5').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
-/* IX. b. Level 5 Solution Logic */
+/* VIII. b. Level 5 Solution Logic */
   $('#progress').on('click', function(){
     let all_answers_correct = [];
     let boxes = $('.square h2');
@@ -576,7 +563,7 @@ $('#levelButton5').on('click', function(){
       alert("Keep trying!");
     }
   });
-/* IX. c. Level 5 Errors Button */
+/* VIII. c. Level 5 Errors Button */
 
   $('#errors').on('click', function(){
     let boxes = $('.square h2');
@@ -602,7 +589,7 @@ $('#levelButton5').on('click', function(){
       }
     })
   });
-/* IX. d. Level 5 Answers Button */
+/* VIII. d. Level 5 Answers Button */
   $('#answers').on('click', function(){
     let boxes = $('.square h2');
     let inputs = $('input.puzzle-piece');
@@ -628,18 +615,26 @@ $('#levelButton5').on('click', function(){
 });
 
 /* ------------------------------
- X. Future Features
+ IX. Future Features
 ------------------------------*/
-/* X a. Give Me A Hint Button */
+/* IX a. Give Me A Hint Button */
 /* This button fills in the on-focus input box  of the user */
 
-/* X b. Grid Buttons */
+/* IX b. Grid Buttons */
 /* These buttons show colors along the rows and columns of the number clicked.
    ie. Given I click the number 1, all number 1s on the board have a background
    color of red, and the rows and colums they are in have a background color
    of tomato. */
+/* for (var j=1; j < 10; j++){
+    let gridButton = $("<input type='button' value='' >")
+    gridButton.attr('value', j)
+    $('#gridButtonsBar').append(gridButton)
+    gridButton.on('click', function(){
+      alert("This button is still a work in progress. Try again some other time!");
+    })
+  } */
 
-/* X c. Pencil Marking Options */
+/* IX c. Pencil Marking Options */
 /* This option changes the font-size of the text in each input box so more
    numbers can be seen. This allows for users to mark in potential numbers
    for harder puzzles where advanced algorithms may be necessary */
