@@ -206,8 +206,12 @@ p {
  IV. Modal Styles
 ------------------------------*/
 
+.playButton {
+ margin: 0 auto;
+}
+
 #howToPlay {
-  width: 16em;
+  width: 34em;
 }
 
 /* The Modal (background) */

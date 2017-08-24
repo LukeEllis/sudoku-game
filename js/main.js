@@ -60,18 +60,12 @@ var span = $('.close');
 var body = $('body');
 
 btn.on('click', function(){
-    modal.css('display','block');
+  modal.css('display','block');
 });
+
 span.on('click', function(){
-    console.log('hi');
-    modal.css('display','none');
+  modal.css('display','none');
 });
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         console.log('hi2');
-//         modal.style.display = "none";
-//     }
-// }
 
 /* ------------------------------
  II. Restart Level Button
