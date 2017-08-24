@@ -1,6 +1,13 @@
 Welcome to my Sudoku Game README!
 
 
+Trello: https://trello.com/b/qM5kU0nd/sudoku-game
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
+Add Wireframe Image reference using --^ Using Mac to Imgur
+
+
+
 Here are some of the technologies I used..
 
 Git/Github/Github Pages
