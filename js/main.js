@@ -79,6 +79,7 @@ var champion = function(){
 $('#levelButton1').on('click', function(){
 
   createBoard();
+  $(".currentLevel").css('display', 'block').text("Level 1");
   var level1 = $('.square h2').each(function(i, obj) {
     if (answerArray1[i].display === true) {
       $(obj).text(answerArray1[i].answer);
@@ -196,6 +197,7 @@ $('#levelButton1').on('click', function(){
 $('#levelButton2').on('click', function(){
 
   createBoard();
+  $(".currentLevel").css('display', 'block').text("Level 2");
   var level2 = $('.square h2').each(function(i, obj) {
     if (answerArray2[i].display === true) {
       $(obj).text(answerArray2[i].answer);
@@ -312,6 +314,7 @@ $('#levelButton2').on('click', function(){
 $('#levelButton3').on('click', function(){
 
   createBoard();
+  $(".currentLevel").css('display', 'block').text("Level 3");
   var level3 = $('.square h2').each(function(i, obj) {
     if (answerArray3[i].display === true) {
       $(obj).text(answerArray3[i].answer);
@@ -426,6 +429,7 @@ $('#levelButton3').on('click', function(){
 $('#levelButton4').on('click', function(){
 
   createBoard();
+  $(".currentLevel").css('display', 'block').text("Level 4");
   var level4 = $('.square h2').each(function(i, obj) {
     if (answerArray4[i].display === true) {
       $(obj).text(answerArray4[i].answer);
@@ -539,6 +543,7 @@ $('#levelButton4').on('click', function(){
 $('#levelButton5').on('click', function(){
 
   createBoard();
+  $(".currentLevel").css('display', 'block').text("Level 5");
   var level5 = $('.square h2').each(function(i, obj) {
     if (answerArray5[i].display === true) {
       $(obj).text(answerArray5[i].answer);

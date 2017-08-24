@@ -20,7 +20,7 @@
   font-family: helvetica;
   font-size: 140%;
   font-weight: 600;
-  display: block;
+  display: none;
 }
 
 .game-board {
