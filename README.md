@@ -1,12 +1,15 @@
 Welcome to my Sudoku Game README!
 
+GitHub Pages Link: https://lukeellis.github.io/sudoku-game/
 
 Trello: https://trello.com/b/qM5kU0nd/sudoku-game
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
 Add Wireframe Image reference using --^ Using Mac to Imgur
+Access Mac to Imgur stuff with Mac Down
 
-
+To push to CapOne Github: git push origin master
+To push to Personal Github: git push upstream master
 
 Here are some of the technologies I used..
 
