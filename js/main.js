@@ -1,6 +1,7 @@
 /* ------------------------------
  0. Table of Contents
  I. Create the Game Board
+ I. a. Modal Functionality
  II. Restart Level Button
  III. Sudoku Champion Alert
  IV. Level 1
@@ -50,6 +51,27 @@ var createBoard = function (){
     $('.game-board').append(square);
   };
 };
+
+/* I. a. Modal Functionality*/
+
+var modal = $('#myModal');
+var btn = $('#howToPlay');
+var span = $('.close');
+var body = $('body');
+
+btn.on('click', function(){
+    modal.css('display','block');
+});
+span.on('click', function(){
+    console.log('hi');
+    modal.css('display','none');
+});
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         console.log('hi2');
+//         modal.style.display = "none";
+//     }
+// }
 
 /* ------------------------------
  II. Restart Level Button
