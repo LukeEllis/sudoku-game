@@ -127,141 +127,6 @@ $('#levelButton1').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
-    // if (i === 0){
-    //   $(obj).text(4);
-    // }
-    // else if (i === 1){
-    //   $(obj).text(2);
-    // }
-    // else if (i === 3){
-    //   $(obj).text(7);
-    // }
-    // else if (i === 4){
-    //   $(obj).text(1);
-    // }
-    // else if (i === 8){
-    //   $(obj).text(3);
-    // }
-    // else if (i === 10){
-    //   $(obj).text(5);
-    // }
-    // else if (i === 11){
-    //   $(obj).text(3);
-    // }
-    // else if (i === 13){
-    //   $(obj).text(8);
-    // }
-    // else if (i === 15){
-    //   $(obj).text(7);
-    // }
-    // else if (i === 16){
-    //   $(obj).text(1);
-    // }
-    // else if (i === 20){
-    //   $(obj).text(6);
-    // }
-    // else if (i === 21){
-    //   $(obj).text(3);
-    // }
-    // else if (i === 22){
-    //   $(obj).text(5);
-    // }
-    // else if (i === 24){
-    //   $(obj).text(2);
-    // }
-    // else if (i === 25){
-    //   $(obj).text(4);
-    // }
-    // else if (i === 30){
-    //   $(obj).text(5);
-    // }
-    // else if (i === 31){
-    //   $(obj).text(9);
-    // }
-    // else if (i === 32){
-    //   $(obj).text(3);
-    // }
-    // else if (i === 33){
-    //   $(obj).text(6);
-    // }
-    // else if (i === 35){
-    //   $(obj).text(7);
-    // }
-    // else if (i === 36){
-    //   $(obj).text(5);
-    // }
-    // else if (i === 37){
-    //   $(obj).text(9);
-    // }
-    // else if (i === 38){
-    //   $(obj).text(2);
-    // }
-    // else if (i === 41){
-    //   $(obj).text(7);
-    // }
-    // else if (i === 43){
-    //   $(obj).text(8);
-    // }
-    // else if (i === 45){
-    //   $(obj).text(3);
-    // }
-    // else if (i === 46){
-    //   $(obj).text(6);
-    // }
-    // else if (i === 50){
-    //   $(obj).text(4);
-    // }
-    // else if (i === 51){
-    //   $(obj).text(9);
-    // }
-    // else if (i === 52){
-    //   $(obj).text(5);
-    // }
-    // else if (i === 54){
-    //   $(obj).text(6);
-    // }
-    // else if (i === 55){
-    //   $(obj).text(8);
-    // }
-    // else if (i === 56){
-    //   $(obj).text(1);
-    // }
-    // else if (i === 60){
-    //   $(obj).text(4);
-    // }
-    // else if (i === 62){
-    //   $(obj).text(2);
-    // }
-    // else if (i === 65){
-    //   $(obj).text(5);
-    // }
-    // else if (i === 66){
-    //   $(obj).text(2);
-    // }
-    // else if (i === 67){
-    //   $(obj).text(4);
-    // }
-    // else if (i === 68){
-    //   $(obj).text(8);
-    // }
-    // else if (i === 71){
-    //   $(obj).text(9);
-    // }
-    // else if (i === 72){
-    //   $(obj).text(2);
-    // }
-    // else if (i === 75){
-    //   $(obj).text(6);
-    // }
-    // else if (i === 77){
-    //   $(obj).text(1);
-    // }
-    // else if (i === 79){
-    //   $(obj).text(3);
-    // }
-    // else if (i === 80){
-    //   $(obj).text(5);
-    //}
 
 /* VIII b. Level 1 Solution Logic */
 
@@ -318,14 +183,28 @@ $('#levelButton1').on('click', function(){
 /* VIII c. Level 1 Errors Button */
 
   $('#errors').on('click', function(){
-    let inputs = $("input.puzzle-piece");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray1[i]) {
-        inputs.eq(i).css('background-color', 'white');
-      } else {
-        inputs.eq(i).css('background-color', 'red');
+    let boxes = $('.square h2');
+    let inputs = $('input.puzzle-piece');
+
+    let only_inputs = boxes.map((i, val) => {
+      let inputs_mutate = Array.from(answerArray1);
+
+      inputs_mutate[i].id = i;
+      if (inputs_mutate[i].display === false) {
+        return inputs_mutate[i];
       }
-    };
+    });
+    only_inputs.map((i, val) => {
+      let int_id = parseInt(i);
+      let answer = parseInt(answerArray1[val.id].answer);
+      let user_answer = parseInt(inputs.eq(int_id).val());
+
+      if (user_answer === answer) {
+        inputs.eq(int_id).css('background-color', 'white');
+      } else {
+        inputs.eq(int_id).css('background-color', 'red');
+      }
+    })
   });
 
 /* VIII d. Level 1 Hint Button */
