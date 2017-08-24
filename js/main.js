@@ -56,7 +56,7 @@ var createBoard = function (){
 ------------------------------*/
 
 $('#levelRestart').on('click', function(){
-  $('.puzzle-piece').val('');
+  $('.puzzle-piece').css('background-color','white').val('');
 });
 
 /* ------------------------------
@@ -68,7 +68,7 @@ var champion = function(){
   if ($('#levelButton1').is(":disabled") && $('#levelButton2').is(":disabled")
       && $('#levelButton3').is(":disabled") && $('#levelButton4').is(":disabled")
       && $('#levelButton5').is(":disabled")){
-        alert("Congratulations, you are officially the Sudoku Champion!!!")
+        $(".currentLevel").css('display', 'block').text("Congratulations, you are officially the Sudoku Champion!!!");
     };
 };
 
@@ -119,14 +119,20 @@ $('#levelButton1').on('click', function(){
       }
 
       if (all_answers_correct.every(checkTrue)){
-         alert("Congratulations, you've beaten Level 1!!!")
+        $(".success").css({'display': 'block'}).text("Congratulations, you've beaten Level 1!!!");
+        setTimeout(function (){
+          $(".success").css('display', 'none')
+        }, 5000)
         // Makes Level 1 button unclickable for future Sudoku Champion check
         var disabled = $('#levelButton1').attr("disabled", true);
         disabled;
         // Checks for the Sudoku Champion
         champion();
       } else {
-        alert("Keep trying!");
+        $(".success").css('display', 'block').text("Keep trying!");
+        setTimeout(function (){
+          $(".success").css('display', 'none')
+        }, 5000)
       }
     });
 
@@ -230,14 +236,20 @@ $('#levelButton2').on('click', function(){
     }
 
     if (all_answers_correct.every(checkTrue)){
-       alert("Congratulations, you've beaten Level 2!!!")
+      $(".success").css('display', 'block').text("Congratulations, you've beaten Level 2!!!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
       // Makes Level 2 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton2').attr("disabled", true);
       disabled;
       // Checks for the Sudoku Champion
       champion();
     } else {
-      alert("Keep trying!");
+      $(".success").css('display', 'block').text("Keep trying!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
     }
   });
 /* V. c. Level 2 Errors Button */
@@ -338,14 +350,20 @@ $('#levelButton3').on('click', function(){
     }
 
     if (all_answers_correct.every(checkTrue)){
-       alert("Congratulations, you've beaten Level 3!!!")
+      $(".success").css('display', 'block').text("Congratulations, you've beaten Level 3!!!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
       // Makes Level 3 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton3').attr("disabled", true);
       disabled;
       // Checks for the Sudoku Champion
       champion();
     } else {
-      alert("Keep trying!");
+      $(".success").css('display', 'block').text("Keep trying!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
     }
   });
 /* VI. c. Level 3 Errors Button */
@@ -446,14 +464,20 @@ $('#levelButton4').on('click', function(){
     }
 
     if (all_answers_correct.every(checkTrue)){
-       alert("Congratulations, you've beaten Level 4!!!")
+      $(".success").css('display', 'block').text("Congratulations, you've beaten Level 4!!!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
       // Makes Level 4 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton4').attr("disabled", true);
       disabled;
       // Checks for the Sudoku Champion
       champion();
     } else {
-      alert("Keep trying!");
+      $(".success").css('display', 'block').text("Keep trying!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
     }
   });
 /* VII. c. Level 4 Errors Button */
@@ -553,14 +577,20 @@ $('#levelButton5').on('click', function(){
     }
 
     if (all_answers_correct.every(checkTrue)){
-       alert("Congratulations, you've beaten Level 5!!!")
+      $(".success").css('display', 'block').text("Congratulations, you've beaten Level 5!!!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
       // Makes Level 5 button unclickable for future Sudoku Champion check
       var disabled = $('#levelButton5').attr("disabled", true);
       disabled;
       // Checks for the Sudoku Champion
       champion();
     } else {
-      alert("Keep trying!");
+      $(".success").css('display', 'block').text("Keep trying!");
+      setTimeout(function (){
+        $(".success").css('display', 'none')
+      }, 5000)
     }
   });
 /* VIII. c. Level 5 Errors Button */

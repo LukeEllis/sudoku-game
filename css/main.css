@@ -5,6 +5,24 @@
 
 }
 
+.success {
+  padding-top: .75em;
+  margin: 0;
+  font-family: helvetica;
+  font-size: 140%;
+  font-weight: 600;
+  display: none;
+}
+
+.currentLevel {
+  padding-top: .75em;
+  margin: 0;
+  font-family: helvetica;
+  font-size: 140%;
+  font-weight: 600;
+  display: block;
+}
+
 .game-board {
   width: 27.3em;
   height: 27.28em;
@@ -27,7 +45,7 @@
   text-align: center;
   font-size: 90%;
   font-family: helvetica;
-  color: blue; 
+  color: blue;
   font-weight: 400;
   margin-top: 0;
 }
@@ -63,6 +81,8 @@ div {
 
 p {
   text-align: center;
+  font-family: helvetica;
+  font-size: 90%;
   margin: .75em auto;
   width: 27em;
   clear: both;
@@ -71,7 +91,7 @@ p {
 .levelButton {
   display: inline;
   margin: .75em 0 0 0;
-  width: 8.55em;
+  width: 6.8em;
 }
 
 .square:nth-child(1), .square:nth-child(2), .square:nth-child(3),
