@@ -45,11 +45,11 @@ var createBoard = function (){
   $('#hint').off('click');
   $('#answers').off('click');
   for (var i = 0; i < 81; i++){
-    let square = $("<div class='square'></div>")
-    square.append('<h2></h2>')
-    $('.game-board').append(square)
-  }
-}
+    let square = $("<div class='square'></div>");
+    square.append('<h2></h2>');
+    $('.game-board').append(square);
+  };
+};
 
 /* ------------------------------
  II. Restart Level Button
