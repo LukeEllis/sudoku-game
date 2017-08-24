@@ -72,10 +72,10 @@ for (var j=1; j < 10; j++){
  III. Solution Arrays
 ------------------------------*/
 //let answerArray1 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
-let answerArray2 = [2, 1, 9, 6, 8, 3, 5, 1, 4, 4, 9, 1, 6, 5, 9, 7, 8, 5, 6, 2, 4, 9, 3, 5, 3, 6, 1, 7, 9, 4, 7, 6, 1, 9, 3, 1, 4, 7, 3, 9, 7, 2, 4];
-let answerArray3 = [8, 3, 6, 7, 1, 1, 9, 6, 2, 4, 7, 3, 4, 8, 6, 9, 4, 6, 8, 7, 2, 5, 2, 7, 5, 3, 4, 8, 5, 8, 1, 7, 4, 6, 7, 1, 9, 6, 4, 2, 6, 1, 8, 2, 3, 5, 8, 4, 5, 9, 1];
-let answerArray4 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
-let answerArray5 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
+// let answerArray2 = [2, 1, 9, 6, 8, 3, 5, 1, 4, 4, 9, 1, 6, 5, 9, 7, 8, 5, 6, 2, 4, 9, 3, 5, 3, 6, 1, 7, 9, 4, 7, 6, 1, 9, 3, 1, 4, 7, 3, 9, 7, 2, 4];
+// let answerArray3 = [8, 3, 6, 7, 1, 1, 9, 6, 2, 4, 7, 3, 4, 8, 6, 9, 4, 6, 8, 7, 2, 5, 2, 7, 5, 3, 4, 8, 5, 8, 1, 7, 4, 6, 7, 1, 9, 6, 4, 2, 6, 1, 8, 2, 3, 5, 8, 4, 5, 9, 1];
+// let answerArray4 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
+// let answerArray5 = [8, 6, 5, 9, 9, 4, 2, 6, 1, 7, 9, 8, 8, 1, 4, 2, 1, 6, 3, 4, 7, 8, 2, 1, 9, 3, 5, 7, 7, 3, 1, 6, 4, 9, 7, 8];
 
 
 /* ------------------------------
@@ -118,11 +118,9 @@ $('#levelButton1').on('click', function(){
 
   createBoard();
   var level1 = $('.square h2').each(function(i, obj) {
-    // console.log(obj, answerArray1[i])
     if (answerArray1[i].display === true) {
       $(obj).text(answerArray1[i].answer);
       $(obj).attr('answer', answerArray1[i].answer);
-      // console.log($(obj).attr('answer'))
     }else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
@@ -271,130 +269,14 @@ $('#levelButton2').on('click', function(){
 
   createBoard();
   var level2 = $('.square h2').each(function(i, obj) {
-    if (i === 1){
-      $(obj).text(5);
-    }
-    else if (i === 2){
-      $(obj).text(3);
-    }
-    else if (i === 3){
-      $(obj).text(7);
-    }
-    else if (i === 5){
-      $(obj).text(4);
-    }
-    else if (i === 7){
-      $(obj).text(8);
-    }
-    else if (i === 9){
-      $(obj).text(7);
-    }
-    else if (i === 11){
-      $(obj).text(6);
-    }
-    else if (i === 12){
-      $(obj).text(9);
-    }
-    else if (i === 13){
-      $(obj).text(2);
-    }
-    else if (i === 22){
-      $(obj).text(8);
-    }
-    else if (i === 24){
-      $(obj).text(3);
-    }
-    else if (i === 25){
-      $(obj).text(7);
-    }
-    else if (i === 26){
-      $(obj).text(2);
-    }
-    else if (i === 24){
-      $(obj).text(2);
-    }
-    else if (i === 25){
-      $(obj).text(4);
-    }
-    else if (i === 31){
-      $(obj).text(3);
-    }
-    else if (i === 32){
-      $(obj).text(2);
-    }
-    else if (i === 33){
-      $(obj).text(4);
-    }
-    else if (i === 35){
-      $(obj).text(1);
-    }
-    else if (i === 36){
-      $(obj).text(6);
-    }
-    else if (i === 37){
-      $(obj).text(1);
-    }
-    else if (i === 40){
-      $(obj).text(7);
-    }
-    else if (i === 42){
-      $(obj).text(8);
-    }
-    else if (i === 45){
-      $(obj).text(5);
-    }
-    else if (i === 47){
-      $(obj).text(4);
-    }
-    else if (i === 48){
-      $(obj).text(8);
-    }
-    else if (i === 52){
-      $(obj).text(2);
-    }
-    else if (i === 54){
-      $(obj).text(8);
-    }
-    else if (i === 57){
-      $(obj).text(2);
-    }
-    else if (i === 58){
-      $(obj).text(5);
-    }
-    else if (i === 62){
-      $(obj).text(3);
-    }
-    else if (i === 64){
-      $(obj).text(2);
-    }
-    else if (i === 65){
-      $(obj).text(9);
-    }
-    else if (i === 68){
-      $(obj).text(8);
-    }
-    else if (i === 69){
-      $(obj).text(6);
-    }
-    else if (i === 70){
-      $(obj).text(5);
-    }
-    else if (i === 72){
-      $(obj).text(1);
-    }
-    else if (i === 73){
-      $(obj).text(6);
-    }
-    else if (i === 74){
-      $(obj).text(5);
-    }
-    else if (i === 80){
-      $(obj).text(8);
-    }
-    else{
+    if (answerArray2[i].display === true) {
+      $(obj).text(answerArray2[i].answer);
+      $(obj).attr('answer', answerArray2[i].answer);
+    }else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
+
 /* IX b. Level 2 Solution Logic */
   $('#progress').on('click', function(){
     let inputs = $("input");
@@ -456,14 +338,28 @@ $('#levelButton2').on('click', function(){
 /* IX c. Level 2 Errors Button */
 
   $('#errors').on('click', function(){
-    let inputs = $("input.puzzle-piece");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray2[i]) {
-        inputs.eq(i).css('background-color', 'white');
-      } else {
-        inputs.eq(i).css('background-color', 'red');
+    let boxes = $('.square h2');
+    let inputs = $('input.puzzle-piece');
+
+    let only_inputs = boxes.map((i, val) => {
+      let inputs_mutate = Array.from(answerArray2);
+
+      inputs_mutate[i].id = i;
+      if (inputs_mutate[i].display === false) {
+        return inputs_mutate[i];
       }
-    };
+    });
+    only_inputs.map((i, val) => {
+      let int_id = parseInt(i);
+      let answer = parseInt(answerArray2[val.id].answer);
+      let user_answer = parseInt(inputs.eq(int_id).val());
+
+      if (user_answer === answer) {
+        inputs.eq(int_id).css('background-color', 'white');
+      } else {
+        inputs.eq(int_id).css('background-color', 'red');
+      }
+    })
   });
 /* IX d. Level 2 Hint Button */
 
@@ -529,100 +425,10 @@ $('#levelButton3').on('click', function(){
 
   createBoard();
   var level3 = $('.square h2').each(function(i, obj) {
-    if (i === 0){
-      $(obj).text(4);
-    }
-    else if (i === 1){
-      $(obj).text(2);
-    }
-    else if (i === 5){
-      $(obj).text(9);
-    }
-    else if (i === 6){
-      $(obj).text(5);
-    }
-    else if (i === 12){
-      $(obj).text(7);
-    }
-    else if (i === 14){
-      $(obj).text(5);
-    }
-    else if (i === 15){
-      $(obj).text(8);
-    }
-    else if (i === 16){
-      $(obj).text(3);
-    }
-    else if (i === 19){
-      $(obj).text(5);
-    }
-    else if (i === 16){
-      $(obj).text(1);
-    }
-    else if (i === 23){
-      $(obj).text(1);
-    }
-    else if (i === 24){
-      $(obj).text(2);
-    }
-    else if (i === 27){
-      $(obj).text(9);
-    }
-    else if (i === 28){
-      $(obj).text(3);
-    }
-    else if (i === 31){
-      $(obj).text(1);
-    }
-    else if (i === 37){
-      $(obj).text(6);
-    }
-    else if (i === 39){
-      $(obj).text(9);
-    }
-    else if (i === 42){
-      $(obj).text(1);
-    }
-    else if (i === 48){
-      $(obj).text(2);
-    }
-    else if (i === 52){
-      $(obj).text(9);
-    }
-    else if (i === 53){
-      $(obj).text(3);
-    }
-    else if (i === 54){
-      $(obj).text(3);
-    }
-    else if (i === 56){
-      $(obj).text(5);
-    }
-    else if (i === 61){
-      $(obj).text(8);
-    }
-    else if (i === 65){
-      $(obj).text(9);
-    }
-    else if (i === 67){
-      $(obj).text(4);
-    }
-    else if (i === 71){
-      $(obj).text(7);
-    }
-    else if (i === 74){
-      $(obj).text(2);
-    }
-    else if (i === 76){
-      $(obj).text(3);
-    }
-    else if (i === 77){
-      $(obj).text(7);
-    }
-    else if (i === 80){
-      $(obj).text(6);
-    }
-    else{
+    if (answerArray3[i].display === true) {
+      $(obj).text(answerArray3[i].answer);
+      $(obj).attr('answer', answerArray3[i].answer);
+    }else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -695,14 +501,28 @@ $('#levelButton3').on('click', function(){
 /* X c. Level 3 Errors Button */
 
   $('#errors').on('click', function(){
-    let inputs = $("input.puzzle-piece");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray3[i]) {
-        inputs.eq(i).css('background-color', 'white');
-      } else {
-        inputs.eq(i).css('background-color', 'red');
+    let boxes = $('.square h2');
+    let inputs = $('input.puzzle-piece');
+
+    let only_inputs = boxes.map((i, val) => {
+      let inputs_mutate = Array.from(answerArray3);
+
+      inputs_mutate[i].id = i;
+      if (inputs_mutate[i].display === false) {
+        return inputs_mutate[i];
       }
-    };
+    });
+    only_inputs.map((i, val) => {
+      let int_id = parseInt(i);
+      let answer = parseInt(answerArray3[val.id].answer);
+      let user_answer = parseInt(inputs.eq(int_id).val());
+
+      if (user_answer === answer) {
+        inputs.eq(int_id).css('background-color', 'white');
+      } else {
+        inputs.eq(int_id).css('background-color', 'red');
+      }
+    })
   });
 /* X d. Level 3 Hint Button */
 
@@ -776,142 +596,10 @@ $('#levelButton4').on('click', function(){
 
   createBoard();
   var level4 = $('.square h2').each(function(i, obj) {
-    if (i === 0){
-      $(obj).text(4);
-    }
-    else if (i === 1){
-      $(obj).text(2);
-    }
-    else if (i === 3){
-      $(obj).text(7);
-    }
-    else if (i === 4){
-      $(obj).text(1);
-    }
-    else if (i === 8){
-      $(obj).text(3);
-    }
-    else if (i === 10){
-      $(obj).text(5);
-    }
-    else if (i === 11){
-      $(obj).text(3);
-    }
-    else if (i === 13){
-      $(obj).text(8);
-    }
-    else if (i === 15){
-      $(obj).text(7);
-    }
-    else if (i === 16){
-      $(obj).text(1);
-    }
-    else if (i === 20){
-      $(obj).text(6);
-    }
-    else if (i === 21){
-      $(obj).text(3);
-    }
-    else if (i === 22){
-      $(obj).text(5);
-    }
-    else if (i === 24){
-      $(obj).text(2);
-    }
-    else if (i === 25){
-      $(obj).text(4);
-    }
-    else if (i === 30){
-      $(obj).text(5);
-    }
-    else if (i === 31){
-      $(obj).text(9);
-    }
-    else if (i === 32){
-      $(obj).text(3);
-    }
-    else if (i === 33){
-      $(obj).text(6);
-    }
-    else if (i === 35){
-      $(obj).text(7);
-    }
-    else if (i === 36){
-      $(obj).text(5);
-    }
-    else if (i === 37){
-      $(obj).text(9);
-    }
-    else if (i === 38){
-      $(obj).text(2);
-    }
-    else if (i === 41){
-      $(obj).text(7);
-    }
-    else if (i === 43){
-      $(obj).text(8);
-    }
-    else if (i === 45){
-      $(obj).text(3);
-    }
-    else if (i === 46){
-      $(obj).text(6);
-    }
-    else if (i === 50){
-      $(obj).text(4);
-    }
-    else if (i === 51){
-      $(obj).text(9);
-    }
-    else if (i === 52){
-      $(obj).text(5);
-    }
-    else if (i === 54){
-      $(obj).text(6);
-    }
-    else if (i === 55){
-      $(obj).text(8);
-    }
-    else if (i === 56){
-      $(obj).text(1);
-    }
-    else if (i === 60){
-      $(obj).text(4);
-    }
-    else if (i === 62){
-      $(obj).text(2);
-    }
-    else if (i === 65){
-      $(obj).text(5);
-    }
-    else if (i === 66){
-      $(obj).text(2);
-    }
-    else if (i === 67){
-      $(obj).text(4);
-    }
-    else if (i === 68){
-      $(obj).text(8);
-    }
-    else if (i === 71){
-      $(obj).text(9);
-    }
-    else if (i === 72){
-      $(obj).text(2);
-    }
-    else if (i === 75){
-      $(obj).text(6);
-    }
-    else if (i === 77){
-      $(obj).text(1);
-    }
-    else if (i === 79){
-      $(obj).text(3);
-    }
-    else if (i === 80){
-      $(obj).text(8);
-    }
-    else{
+    if (answerArray4[i].display === true) {
+      $(obj).text(answerArray4[i].answer);
+      $(obj).attr('answer', answerArray4[i].answer);
+    }else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -969,14 +657,28 @@ $('#levelButton4').on('click', function(){
 /* XI c. Level 4 Errors Button */
 
   $('#errors').on('click', function(){
-    let inputs = $("input.puzzle-piece");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray4[i]) {
-        inputs.eq(i).css('background-color', 'white');
-      } else {
-        inputs.eq(i).css('background-color', 'red');
+    let boxes = $('.square h2');
+    let inputs = $('input.puzzle-piece');
+
+    let only_inputs = boxes.map((i, val) => {
+      let inputs_mutate = Array.from(answerArray4);
+
+      inputs_mutate[i].id = i;
+      if (inputs_mutate[i].display === false) {
+        return inputs_mutate[i];
       }
-    };
+    });
+    only_inputs.map((i, val) => {
+      let int_id = parseInt(i);
+      let answer = parseInt(answerArray4[val.id].answer);
+      let user_answer = parseInt(inputs.eq(int_id).val());
+
+      if (user_answer === answer) {
+        inputs.eq(int_id).css('background-color', 'white');
+      } else {
+        inputs.eq(int_id).css('background-color', 'red');
+      }
+    })
   });
 /* XI d. Level 4 Hint Button */
 
@@ -997,142 +699,10 @@ $('#levelButton5').on('click', function(){
 
   createBoard();
   var level5 = $('.square h2').each(function(i, obj) {
-    if (i === 0){
-      $(obj).text(4);
-    }
-    else if (i === 1){
-      $(obj).text(2);
-    }
-    else if (i === 3){
-      $(obj).text(7);
-    }
-    else if (i === 4){
-      $(obj).text(1);
-    }
-    else if (i === 8){
-      $(obj).text(3);
-    }
-    else if (i === 10){
-      $(obj).text(5);
-    }
-    else if (i === 11){
-      $(obj).text(3);
-    }
-    else if (i === 13){
-      $(obj).text(8);
-    }
-    else if (i === 15){
-      $(obj).text(7);
-    }
-    else if (i === 16){
-      $(obj).text(1);
-    }
-    else if (i === 20){
-      $(obj).text(6);
-    }
-    else if (i === 21){
-      $(obj).text(3);
-    }
-    else if (i === 22){
-      $(obj).text(5);
-    }
-    else if (i === 24){
-      $(obj).text(2);
-    }
-    else if (i === 25){
-      $(obj).text(4);
-    }
-    else if (i === 30){
-      $(obj).text(5);
-    }
-    else if (i === 31){
-      $(obj).text(9);
-    }
-    else if (i === 32){
-      $(obj).text(3);
-    }
-    else if (i === 33){
-      $(obj).text(6);
-    }
-    else if (i === 35){
-      $(obj).text(7);
-    }
-    else if (i === 36){
-      $(obj).text(5);
-    }
-    else if (i === 37){
-      $(obj).text(9);
-    }
-    else if (i === 38){
-      $(obj).text(2);
-    }
-    else if (i === 41){
-      $(obj).text(7);
-    }
-    else if (i === 43){
-      $(obj).text(8);
-    }
-    else if (i === 45){
-      $(obj).text(3);
-    }
-    else if (i === 46){
-      $(obj).text(6);
-    }
-    else if (i === 50){
-      $(obj).text(4);
-    }
-    else if (i === 51){
-      $(obj).text(9);
-    }
-    else if (i === 52){
-      $(obj).text(5);
-    }
-    else if (i === 54){
-      $(obj).text(6);
-    }
-    else if (i === 55){
-      $(obj).text(8);
-    }
-    else if (i === 56){
-      $(obj).text(1);
-    }
-    else if (i === 60){
-      $(obj).text(4);
-    }
-    else if (i === 62){
-      $(obj).text(2);
-    }
-    else if (i === 65){
-      $(obj).text(5);
-    }
-    else if (i === 66){
-      $(obj).text(2);
-    }
-    else if (i === 67){
-      $(obj).text(4);
-    }
-    else if (i === 68){
-      $(obj).text(8);
-    }
-    else if (i === 71){
-      $(obj).text(9);
-    }
-    else if (i === 72){
-      $(obj).text(2);
-    }
-    else if (i === 75){
-      $(obj).text(6);
-    }
-    else if (i === 77){
-      $(obj).text(1);
-    }
-    else if (i === 79){
-      $(obj).text(3);
-    }
-    else if (i === 80){
-      $(obj).text(9);
-    }
-    else{
+    if (answerArray5[i].display === true) {
+      $(obj).text(answerArray5[i].answer);
+      $(obj).attr('answer', answerArray5[i].answer);
+    }else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
@@ -1190,14 +760,28 @@ $('#levelButton5').on('click', function(){
 /* XII c. Level 5 Errors Button */
 
   $('#errors').on('click', function(){
-    let inputs = $("input.puzzle-piece");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs.eq(i).val() == answerArray5[i]) {
-        inputs.eq(i).css('background-color', 'white');
-      } else {
-        inputs.eq(i).css('background-color', 'red');
+    let boxes = $('.square h2');
+    let inputs = $('input.puzzle-piece');
+
+    let only_inputs = boxes.map((i, val) => {
+      let inputs_mutate = Array.from(answerArray5);
+
+      inputs_mutate[i].id = i;
+      if (inputs_mutate[i].display === false) {
+        return inputs_mutate[i];
       }
-    };
+    });
+    only_inputs.map((i, val) => {
+      let int_id = parseInt(i);
+      let answer = parseInt(answerArray5[val.id].answer);
+      let user_answer = parseInt(inputs.eq(int_id).val());
+
+      if (user_answer === answer) {
+        inputs.eq(int_id).css('background-color', 'white');
+      } else {
+        inputs.eq(int_id).css('background-color', 'red');
+      }
+    })
   });
 /* XII d. Level 5 Hint Button */
 

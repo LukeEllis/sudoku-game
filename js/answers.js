@@ -82,7 +82,7 @@ var answerArray1 = [
   {answer: 5, display: true},
 ];
 
-var answerArray2test = [
+var answerArray2 = [
   {answer: 2, display: false},
   {answer: 5, display: true},
   {answer: 3, display: true},
@@ -166,7 +166,7 @@ var answerArray2test = [
   {answer: 8, display: true},
 ];
 
-var answerArray3test = [
+var answerArray3 = [
   {answer: 4, display: true},
   {answer: 2, display: true},
   {answer: 8, display: false},
@@ -250,7 +250,7 @@ var answerArray3test = [
   {answer: 6, display: true},
 ];
 
-var answerArray4test = [
+var answerArray4 = [
   {answer: 4, display: true},
   {answer: 2, display: true},
   {answer: 8, display: false},
@@ -334,7 +334,7 @@ var answerArray4test = [
   {answer: 8, display: true},
 ];
 
-var answerArray5test = [
+var answerArray5 = [
   {answer: 4, display: true},
   {answer: 2, display: true},
   {answer: 8, display: false},
