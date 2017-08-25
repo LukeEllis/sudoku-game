@@ -57,7 +57,6 @@ var createBoard = function (){
 var modal = $('#myModal');
 var btn = $('#howToPlay');
 var span = $('.close');
-var body = $('body');
 
 btn.on('click', function(){
   modal.css('display','block');
