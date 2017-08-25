@@ -30,7 +30,8 @@ a button, I could add that to my Trello board and work through it on
 my next sprint. Finally, after having total functionality complete, I
 aimed to improve the UX (user experience) and css styling of my page
 for the final touches.
-*note* ![Wireframe Image](http://imgur.com/a/7Jrzy) ![Favicon Image](http://www.favicon.cc/?action=icon&file_id=13993)
+
+*image resources* ![Wireframe Image](http://imgur.com/a/7Jrzy) ![Favicon Image](http://www.favicon.cc/?action=icon&file_id=13993)
 
 ## If I decide to come back to this project, or one of you users would like to take a stab at some of the features I missed, it would have been great to have included the following:
 
