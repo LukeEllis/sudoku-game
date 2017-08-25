@@ -149,7 +149,7 @@ p {
  III. Button Styles
 ------------------------------*/
 
-.levelButton, .barButton, #howToPlay {
+.levelButton, .barButton, #howToPlay, #dev{
   display: inline;
   margin: 1.5em 0 0 0;
   width: 6.8em;
@@ -169,12 +169,12 @@ p {
 	text-shadow:0px 1px 0px #528ecc;
 }
 
-.levelButton:hover, .barButton:hover, #howToPlay:hover {
+.levelButton:hover, .barButton:hover, #howToPlay:hover, #dev:hover {
 	background:linear-gradient(to bottom, #80b5ea 5%, #6495ED 100%);
 	background-color:#80b5ea;
 }
 
-.levelButton:active, .barButton:active, #howToPlay:active {
+.levelButton:active, .barButton:active, #howToPlay:active, #dev:active {
 	position:relative;
 	top:1px;
 }
@@ -211,7 +211,15 @@ p {
  margin: 0 auto;
 }
 
+.contact {
+ margin: 0 auto;
+}
+
 #howToPlay {
+  width: 34em;
+}
+
+#dev {
   width: 34em;
 }
 
