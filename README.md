@@ -13,7 +13,7 @@ Javascript/JQuery
 HTML/CSS
 
 
-#My overall process for making the game involved:
+# My overall process for making the game involved:
 
 Analyzing my project and placing features into a Trello board in order
 of importance. You can see my Trello board for inspiration on your own
@@ -36,9 +36,7 @@ Wireframe Image:
 Favicon Image:
 ![alt text](http://www.favicon.cc/?action=icon&file_id=13993)
 
-#If I decide to come back to this project, or one of you users would like to
-#take a stab at some of the features I missed, it would have been great to
-#have included the following:
+# If I decide to come back to this project, or one of you users would like to take a stab at some of the features I missed, it would have been great to have included the following:
 
 1. A "Give Me A Hint" button that fills in the on-focus input box  of the user.
 2. Several numbered Grid Buttons that show colors along the rows and columns
@@ -54,11 +52,10 @@ Favicon Image:
 4. When clicking the body of the viewport, close the modals instead of
    requiring users to click the X. This should be easy, but I struggled
    to get it to work.
-###### *note* I have included these features and a bit of start code or pseudo code
-at the bottom my the main.js file.
+###### *note* I have included these features and a bit of start code or pseudo code at the bottom my the main.js file.
 
 
-#In my development of the Sudoku Game, I ran into several bugs:
+# In my development of the Sudoku Game, I ran into several bugs:
 
 * My first major bug had input boxes appending on top of one another
   each time a user clicked a level button. The solution to this was
@@ -85,9 +82,9 @@ at the bottom my the main.js file.
   thus far.
 
 
-#NOW! Onto the rules of the game:
+# NOW! Onto the rules of the game:
 
-##HOW TO PLAY THE GAME
+## HOW TO PLAY THE GAME
 
 Sudoku is an exciting puzzle game where you use logic and pattern recognition to find the solution!
 
