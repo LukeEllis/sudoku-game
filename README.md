@@ -1,19 +1,19 @@
-Welcome to my Sudoku Game README!
+# Welcome to my Sudoku Game README!
 
-GitHub Pages Link: https://lukeellis.github.io/sudoku-game/
+GitHub Pages Link: (https://lukeellis.github.io/sudoku-game/)
 
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
-Add Wireframe Image/favicon reference using --^ Using Mac to Imgur
-Access Mac to Imgur stuff with Mac Down
+### For tips to make your README more READable:
+(https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
 
-In order to make my Sudoku Game, I used the following technologies:
+
+# In order to make my Sudoku Game, I used the following technologies:
 
 Git/Github/Github Pages
 Javascript/JQuery
 HTML/CSS
 
 
-My overall process for making the game involved:
+#My overall process for making the game involved:
 
 Analyzing my project and placing features into a Trello board in order
 of importance. You can see my Trello board for inspiration on your own
@@ -30,31 +30,35 @@ a button, I could add that to my Trello board and work through it on
 my next sprint. Finally, after having total functionality complete, I
 aimed to improve the UX (user experience) and css styling of my page
 for the final touches.
+*note*
+Wireframe Image:
+![alt text](http://imgur.com/a/7Jrzy)
+Favicon Image:
+![alt text](http://www.favicon.cc/?action=icon&file_id=13993)
 
+#If I decide to come back to this project, or one of you users would like to
+#take a stab at some of the features I missed, it would have been great to
+#have included the following:
 
-If I decide to come back to this project, or one of you users would like to
-take a stab at some of the features I missed, it would have been great to
-have included the following:
-
-1) A "Give Me A Hint" button that fills in the on-focus input box  of the user.
-2) Several numbered Grid Buttons that show colors along the rows and columns
+1. A "Give Me A Hint" button that fills in the on-focus input box  of the user.
+2. Several numbered Grid Buttons that show colors along the rows and columns
    of the number clicked. ie. Given I click the number 1, all number 1s on
    the board have a background color of red, and the rows and colums they
    are in have a background color of tomato. This allows users to more easily
    see where they should put the next number without outright giving them
    the answer.
-3) The option to use Pencil Markings, which changes the font-size of the
+3. The option to use Pencil Markings, which changes the font-size of the
    text in each input box so more numbers can be seen. This allows for
    users to mark in potential numbers for harder puzzles where advanced
    algorithms may be necessary.
-4) When clicking the body of the viewport, close the modals instead of
+4. When clicking the body of the viewport, close the modals instead of
    requiring users to click the X. This should be easy, but I struggled
    to get it to work.
-*note* I have included these features and a bit of start code or pseudo code
+###### *note* I have included these features and a bit of start code or pseudo code
 at the bottom my the main.js file.
 
 
-In my development of the Sudoku Game, I ran into several bugs:
+#In my development of the Sudoku Game, I ran into several bugs:
 
 * My first major bug had input boxes appending on top of one another
   each time a user clicked a level button. The solution to this was
@@ -81,9 +85,9 @@ In my development of the Sudoku Game, I ran into several bugs:
   thus far.
 
 
-NOW! Onto the rules of the game:
+#NOW! Onto the rules of the game:
 
-HOW TO PLAY THE GAME
+##HOW TO PLAY THE GAME
 
 Sudoku is an exciting puzzle game where you use logic and pattern recognition to find the solution!
 
