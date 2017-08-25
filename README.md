@@ -8,9 +8,9 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
 
 ## In order to make my Sudoku Game, I used the following technologies:
 
-Git/Github/Github Pages
-Javascript/JQuery
-HTML/CSS
+* Git/Github/Github Pages
+* Javascript/JQuery
+* HTML/CSS
 
 
 ## My overall process for making the game involved:
