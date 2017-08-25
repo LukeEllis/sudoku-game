@@ -2,18 +2,18 @@
 
 GitHub Pages Link: https://lukeellis.github.io/sudoku-game/
 
-#### For tips to make your README more READable:
+## For tips to make your README more READable:
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
 
 
-### In order to make my Sudoku Game, I used the following technologies:
+## In order to make my Sudoku Game, I used the following technologies:
 
 Git/Github/Github Pages
 Javascript/JQuery
 HTML/CSS
 
 
-### My overall process for making the game involved:
+## My overall process for making the game involved:
 
 Analyzing my project and placing features into a Trello board in order
 of importance. You can see my Trello board for inspiration on your own
@@ -32,7 +32,7 @@ aimed to improve the UX (user experience) and css styling of my page
 for the final touches.
 *note* ![Wireframe Image](http://imgur.com/a/7Jrzy) ![Favicon Image](http://www.favicon.cc/?action=icon&file_id=13993)
 
-### If I decide to come back to this project, or one of you users would like to take a stab at some of the features I missed, it would have been great to have included the following:
+## If I decide to come back to this project, or one of you users would like to take a stab at some of the features I missed, it would have been great to have included the following:
 
 1. A "Give Me A Hint" button that fills in the on-focus input box  of the user.
 2. Several numbered Grid Buttons that show colors along the rows and columns
@@ -51,7 +51,7 @@ for the final touches.
 ###### *note* I have included these features and a bit of start code or pseudo code at the bottom my the main.js file.
 
 
-### In my development of the Sudoku Game, I ran into several bugs:
+## In my development of the Sudoku Game, I ran into several bugs:
 
 * My first major bug had input boxes appending on top of one another
   each time a user clicked a level button. The solution to this was
@@ -78,7 +78,7 @@ for the final touches.
   thus far.
 
 
-### HOW TO PLAY THE GAME
+## HOW TO PLAY THE GAME
 
 Sudoku is an exciting puzzle game where you use logic and pattern recognition to find the solution!
 
