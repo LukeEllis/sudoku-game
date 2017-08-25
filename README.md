@@ -1,9 +1,9 @@
 # Welcome to my Sudoku Game README!
 
-GitHub Pages Link: (https://lukeellis.github.io/sudoku-game/)
+GitHub Pages Link: https://lukeellis.github.io/sudoku-game/
 
 ### For tips to make your README more READable:
-(https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
 
 
 # In order to make my Sudoku Game, I used the following technologies:
@@ -30,11 +30,7 @@ a button, I could add that to my Trello board and work through it on
 my next sprint. Finally, after having total functionality complete, I
 aimed to improve the UX (user experience) and css styling of my page
 for the final touches.
-*note*
-Wireframe Image:
-![alt text](http://imgur.com/a/7Jrzy)
-Favicon Image:
-![alt text](http://www.favicon.cc/?action=icon&file_id=13993)
+*note* ![Wireframe Image](http://imgur.com/a/7Jrzy) ![Favicon Image](http://www.favicon.cc/?action=icon&file_id=13993)
 
 # If I decide to come back to this project, or one of you users would like to take a stab at some of the features I missed, it would have been great to have included the following:
 
@@ -82,9 +78,7 @@ Favicon Image:
   thus far.
 
 
-# NOW! Onto the rules of the game:
-
-## HOW TO PLAY THE GAME
+# HOW TO PLAY THE GAME
 
 Sudoku is an exciting puzzle game where you use logic and pattern recognition to find the solution!
 
@@ -97,5 +91,6 @@ A few of the correct numbers have been placed into the box to get you started. C
 Work through the puzzles from Level 1 up to Level 5 to beat the game and become the Sudoku Champion!
 
 
-I hope you've enjoyed playing around with my Sudoku Game! Please feel free to
-contact me at my personal email with any questions or comments: lukeellisx@gmail.com
+
+*I hope you've enjoyed playing around with my Sudoku Game! Please feel free to
+contact me at my personal email with any questions or comments: lukeellisx@gmail.com*
