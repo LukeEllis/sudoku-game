@@ -72,6 +72,7 @@
 
 #buttonBar1 {
   margin: .75em auto 0 auto;
+  display: none;
 }
 
 h1 {

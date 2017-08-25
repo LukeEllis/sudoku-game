@@ -52,6 +52,11 @@ var createBoard = function (){
   };
 };
 
+//Hides Functional Buttons until a level is chosen
+$('#levelBar').on('click', function(){
+  $('#buttonBar1').css('display', 'block');
+});
+
 /* I. a. Modal Functionality*/
 
 var modal = $('#myModal');
@@ -101,6 +106,13 @@ $('#levelButton1').on('click', function(){
       $(obj).attr('answer', answerArray1[i].answer);
     }else{
       $(obj).append("<input class='puzzle-piece' type='text'>");
+    }
+  });
+//Prevents users from entering non-numeric inputs
+  $(".puzzle-piece").on("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
     }
   });
 
@@ -221,6 +233,13 @@ $('#levelButton2').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
+//Prevents users from entering non-numeric inputs
+  $(".puzzle-piece").on("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+  });
 
 /* V. b. Level 2 Solution Logic */
 
@@ -338,6 +357,13 @@ $('#levelButton3').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
+//Prevents users from entering non-numeric inputs
+  $(".puzzle-piece").on("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+  });
 /* VI. b. Level 3 Solution Logic */
   $('#progress').on('click', function(){
     let all_answers_correct = [];
@@ -453,6 +479,15 @@ $('#levelButton4').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
+
+//Prevents users from entering non-numeric inputs
+  $(".puzzle-piece").on("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+  });
+
 /* VII. b. Level 4 Solution Logic */
   $('#progress').on('click', function(){
     let all_answers_correct = [];
@@ -567,6 +602,15 @@ $('#levelButton5').on('click', function(){
       $(obj).append("<input class='puzzle-piece' type='text'>");
     }
   });
+
+//Prevents users from entering non-numeric inputs
+  $(".puzzle-piece").on("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+  });
+
 /* VIII. b. Level 5 Solution Logic */
   $('#progress').on('click', function(){
     let all_answers_correct = [];
