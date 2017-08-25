@@ -17,6 +17,24 @@
 
 }
 
+a {
+ font-family: helvetica;
+ padding: 0 1em;
+ text-decoration: none;
+}
+
+footer {
+  position:absolute;
+  text-align: center;
+  background-color: #add8e6;
+  padding: 2em .5em .3em .5em;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow:hidden;
+}
+
 .success {
   padding-top: .75em;
   margin: 0;
@@ -149,7 +167,7 @@ p {
  III. Button Styles
 ------------------------------*/
 
-.levelButton, .barButton, #howToPlay, #dev{
+.levelButton, .barButton, #howToPlay {
   display: inline;
   margin: 1.5em 0 0 0;
   width: 6.8em;
@@ -169,12 +187,12 @@ p {
 	text-shadow:0px 1px 0px #528ecc;
 }
 
-.levelButton:hover, .barButton:hover, #howToPlay:hover, #dev:hover {
+.levelButton:hover, .barButton:hover, #howToPlay:hover {
 	background:linear-gradient(to bottom, #80b5ea 5%, #6495ED 100%);
 	background-color:#80b5ea;
 }
 
-.levelButton:active, .barButton:active, #howToPlay:active, #dev:active {
+.levelButton:active, .barButton:active, #howToPlay:active {
 	position:relative;
 	top:1px;
 }
@@ -216,10 +234,6 @@ p {
 }
 
 #howToPlay {
-  width: 34em;
-}
-
-#dev {
   width: 34em;
 }
 
