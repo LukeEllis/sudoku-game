@@ -183,7 +183,8 @@ $('#levelButton1').on('click', function(){
       let answer = parseInt(answerArray1[val.id].answer);
       let user_answer = parseInt(inputs.eq(int_id).val());
 
-      if (user_answer === answer) {
+// If the answer is correct or the user has not entered a number, keep the background white
+      if ((user_answer === answer) || (inputs.eq(int_id).val() == '')) {
         inputs.eq(int_id).css('background-color', 'white');
       } else {
         inputs.eq(int_id).css('background-color', 'red');
@@ -307,7 +308,8 @@ $('#levelButton2').on('click', function(){
       let answer = parseInt(answerArray2[val.id].answer);
       let user_answer = parseInt(inputs.eq(int_id).val());
 
-      if (user_answer === answer) {
+// If the answer is correct or the user has not entered a number, keep the background white
+      if ((user_answer === answer) || (inputs.eq(int_id).val() == '')) {
         inputs.eq(int_id).css('background-color', 'white');
       } else {
         inputs.eq(int_id).css('background-color', 'red');
@@ -429,7 +431,8 @@ $('#levelButton3').on('click', function(){
       let answer = parseInt(answerArray3[val.id].answer);
       let user_answer = parseInt(inputs.eq(int_id).val());
 
-      if (user_answer === answer) {
+// If the answer is correct or the user has not entered a number, keep the background white
+      if ((user_answer === answer) || (inputs.eq(int_id).val() == '')) {
         inputs.eq(int_id).css('background-color', 'white');
       } else {
         inputs.eq(int_id).css('background-color', 'red');
@@ -553,7 +556,8 @@ $('#levelButton4').on('click', function(){
       let answer = parseInt(answerArray4[val.id].answer);
       let user_answer = parseInt(inputs.eq(int_id).val());
 
-      if (user_answer === answer) {
+// If the answer is correct or the user has not entered a number, keep the background white
+      if ((user_answer === answer) || (inputs.eq(int_id).val() == '')) {
         inputs.eq(int_id).css('background-color', 'white');
       } else {
         inputs.eq(int_id).css('background-color', 'red');
@@ -676,7 +680,8 @@ $('#levelButton5').on('click', function(){
       let answer = parseInt(answerArray5[val.id].answer);
       let user_answer = parseInt(inputs.eq(int_id).val());
 
-      if (user_answer === answer) {
+// If the answer is correct or the user has not entered a number, keep the background white
+      if ((user_answer === answer) || (inputs.eq(int_id).val() == '')) {
         inputs.eq(int_id).css('background-color', 'white');
       } else {
         inputs.eq(int_id).css('background-color', 'red');
