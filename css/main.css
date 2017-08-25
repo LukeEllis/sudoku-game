@@ -17,22 +17,25 @@
 
 }
 
-a {
+#dev, #techniques {
  font-family: helvetica;
  padding: 0 1em;
- text-decoration: none;
 }
 
 footer {
   position:absolute;
   text-align: center;
-  background-color: #add8e6;
-  padding: 2em .5em .3em .5em;
+  background-color: #B8D1FF;
+  padding: 1.3em .5em 0 .5em;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 4em;
   width: 100%;
   overflow:hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 .success {
@@ -167,7 +170,7 @@ p {
  III. Button Styles
 ------------------------------*/
 
-.levelButton, .barButton, #howToPlay {
+.levelButton, .barButton, #howToPlay, #dev, #techniques {
   display: inline;
   margin: 1.5em 0 0 0;
   width: 6.8em;
@@ -219,6 +222,32 @@ p {
 
 #levelRestart {
   width: 10em;
+}
+
+#dev {
+  width: 14em;
+}
+
+#techniques {
+  width: 14em;
+}
+
+#dev, #techniques {
+  background:linear-gradient(to bottom, #FFFFFF 5%, #b8d1ff 100%);
+	background-color:	#FFFFFF;
+  color: #5C697F;
+  margin: 0;
+}
+
+#dev:hover, #techniques:hover {
+  background:linear-gradient(to bottom, #80b5ea 5%, #6495ED 100%);
+	background-color:#80b5ea;
+  color: white;
+}
+
+#dev:active, #techniques:active {
+  position:relative;
+	top:1px;
 }
 
 /* ------------------------------
