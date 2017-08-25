@@ -33,7 +33,7 @@ for the final touches.
 
 Image resources: ![Wireframe Image](http://imgur.com/a/7Jrzy) ![Favicon Image](http://www.favicon.cc/?action=icon&file_id=13993)
 
-## Potential Future Features:
+## Future Features:
 
 1. A "Give Me A Hint" button that fills in the on-focus input box  of the user.
 2. Several numbered Grid Buttons that show colors along the rows and columns
