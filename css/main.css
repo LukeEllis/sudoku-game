@@ -250,6 +250,10 @@ p {
 	top:1px;
 }
 
+#dev a:visited, #techniques a:visited {
+  color: blue;
+}
+
 /* ------------------------------
  IV. Modal Styles
 ------------------------------*/
